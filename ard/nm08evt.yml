@@ -1,0 +1,38 @@
+Program 0x16
+AreaSettings 1 16
+ SetProgressFlag 0x380F
+ SetJump Type 1 World NM Area 6 Entrance 51 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "f02_"
+Spawn "g00_"
+
+Program 0x01
+Party W_FRIEND
+Bgm 97 97
+AreaSettings 0 -1
+ SetProgressFlag 0x380D
+ SetJump Type 1 World NM Area 8 Entrance 51 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+
+Program 0x0E
+AreaSettings 1 16
+ SetProgressFlag 0x3818
+ SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 55 FadeType 1
+ SetPartyMenu 0
+
+Spawn "f03_"
+Spawn "g01_"
+
+
+Program 0x11
+Party W_FRIEND
+AreaSettings 9 -1
+ SetProgressFlag 0x382F
+ SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 64 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "e52y"

@@ -1,0 +1,68 @@
+Program 0x16
+Party DEFAULT
+MapScript 48
+AreaSettings 9 -1
+ SetProgressFlag 0x1003
+ SetJump Type 1 World HB Area 10 Entrance 51 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_01"
+Spawn "e_50"
+Spawn "e_51"
+Spawn "e_52"
+Spawn "a00e"
+Spawn "z00s"
+Spawn "o00s"
+
+Program 0x10
+AreaSettings 9 -1
+ SetProgressFlag 0x100B
+ SetMember 1
+ SetJump Type 1 World HB Area 10 Entrance 51 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+AreaSettings 10 -1
+ SetProgressFlag 0x100C
+ SetMember 1
+ SetJump Type 1 World HB Area 10 Entrance 52 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_08"
+Spawn "e_50"
+Spawn "e_51"
+Spawn "e_52"
+Spawn "a02e"
+Spawn "f01e"
+Spawn "z00s"
+Spawn "o01s"
+
+Program 0x11
+AreaSettings 9 -1
+ SetProgressFlag 0x1087
+ SetMember 1
+ SetJump Type 1 World HB Area 10 Entrance 51 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_04"
+Spawn "e_50"
+Spawn "e_51"
+Spawn "e_52"
+Spawn "a02e"
+Spawn "z00s"
+Spawn "o01s"
+
+Program 0x12
+AreaSettings 10 -1
+ SetProgressFlag 0x1088
+ SetMember 1
+ SetJump Type 1 World HB Area 10 Entrance 52 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_05"
+Spawn "e_50"
+Spawn "e_51"
+Spawn "e_52"
+Spawn "a03_"
+Spawn "f01e"
+Spawn "z00s"
+Spawn "o01s"

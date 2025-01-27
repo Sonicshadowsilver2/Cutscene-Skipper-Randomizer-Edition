@@ -1,0 +1,12 @@
+Program 0x15
+AreaSettings 1 36
+ SetProgressFlag 0x4026
+ SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 85 FadeType 1
+ SetPartyMenu 0
+
+Unk1d 4
+Spawn "e_50"
+Spawn "a51_"
+Spawn "b50_"
+Spawn "c51_"
+Spawn "d53_"

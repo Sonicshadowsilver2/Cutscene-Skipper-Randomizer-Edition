@@ -1,0 +1,38 @@
+Program 0x0B
+AreaSettings 1 25
+ SetProgressFlag 0x441A
+ SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 56 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_06"
+Spawn "e_50"
+
+Program 0x33
+Bgm 136 136
+AreaSettings 7 -1
+ SetProgressFlag 0x4406
+ SetUnk05 0x3
+ SetJump Type 1 World TR Area 1 Entrance 51 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+AreaSettings 15 -1
+ SetProgressFlag 0x4434
+ SetUnk05 0x3
+ SetJump Type 1 World TR Area 1 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_04"
+Spawn "e_50"
+
+Program 0x02
+Party W_FRIEND
+AreaSettings 9 -1
+ SetProgressFlag 0x4405
+ SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 51 FadeType 1
+ SetPartyMenu 0
+
+Unk1d 4
+Spawn "e_03"
+Spawn "e_50"
+Spawn "a02_"
+Spawn "b01_"

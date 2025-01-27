@@ -1,0 +1,29 @@
+Program 0x0A
+Capacity 50
+AreaSettings 1 39
+ SetProgressFlag 0x4029
+ SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 62 FadeType 1
+ SetPartyMenu 0
+
+Spawn "b_20"
+Spawn "b_80"
+Spawn "b_10"
+
+Program 0x16
+Capacity 51
+Unk06 0
+Party W_FRIEND
+StatusFlag3
+AreaSettings 17 -1
+ SetProgressFlag 0x403C
+ SetPartyMenu 0
+
+AreaSettings 7 -1
+ SetProgressFlag 0x402D
+ SetJump Type 1 World CA Area 5 Entrance 51 LocalSet 0 FadeType 16385
+ SetPartyMenu 0
+
+Mission 0xE0 "CA15_MEDAL"
+Spawn "b_70"
+Spawn "b_72"
+Spawn "b_10"

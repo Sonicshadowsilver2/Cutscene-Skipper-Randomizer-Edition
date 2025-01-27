@@ -1,0 +1,5 @@
+Program 0x14
+Party DEFAULT
+Spawn "e_50"
+Spawn "e_51"
+Spawn "z00s"

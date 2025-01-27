@@ -1,0 +1,9 @@
+Program 0x00
+Party DEFAULT
+MapVisibility 0xfff00403 0x000003ff
+Spawn "m_00"
+Spawn "m_10"
+Spawn "m_11"
+Spawn "m_22"
+Spawn "m_70"
+Spawn "m_80"

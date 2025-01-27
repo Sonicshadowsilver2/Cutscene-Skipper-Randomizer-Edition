@@ -1,0 +1,21 @@
+Program 0x0A
+Party W_FRIEND
+Bgm Default Default
+AreaSettings 0 -1
+ SetProgressFlag 0x1C33
+ SetJump Type 1 World AL Area 6 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "b50e"
+
+Program 0x0B
+Party W_FRIEND
+AreaSettings 0 -1
+ SetProgressFlag 0x1C38
+ SetJump Type 1 World AL Area 6 Entrance 51 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+
+Program 0x00
+Spawn "e_50"
+Spawn "e_51"

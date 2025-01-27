@@ -1,0 +1,9 @@
+Program 0xC8
+Bgm 110 110
+AreaSettings 0 -1
+ SetProgressFlag 0x1877
+ SetUnk05 0x2
+ SetEvent "215" Type 3
+ SetJump Type 1 World HB Area 26 Entrance 26 LocalSet 0 FadeType 1
+ SetInventory 272
+ SetPartyMenu 0

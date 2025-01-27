@@ -1,0 +1,31 @@
+Program 0x0A
+Party W_FRIEND
+AreaSettings 9 -1
+ SetProgressFlag 0x2046
+ SetJump Type 1 World MU Area 10 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_11"
+Spawn "e_50"
+
+Program 0x01
+Party W_FRIEND
+AreaSettings 9 -1
+ SetProgressFlag 0x203F
+ SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 75 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_10"
+Spawn "e_50"
+Spawn "d00_"
+
+Program 0x4B
+Bgm 145 145
+AreaSettings 16 -1
+ SetProgressFlag 0x2012
+ SetMember 2
+ SetUnk05 0x2
+ SetEvent "118" Type 3
+ SetJump Type 1 World HB Area 26 Entrance 22 LocalSet 0 FadeType 1
+ SetInventory 257
+ SetPartyMenu 0

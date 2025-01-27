@@ -1,0 +1,21 @@
+Program 0x48
+Bgm 131 131
+AreaSettings 16 -1
+ SetProgressFlag 0x142A
+ SetUnk05 0x3
+ SetJump Type 1 World BB Area 11 Entrance 50 LocalSet 0 FadeType 2
+ SetPartyMenu 0
+
+Spawn "e_02"
+
+Program 0x02
+Party DEFAULT
+AreaSettings 9 -1
+ SetProgressFlag 0x1437
+ SetJump Type 1 World BB Area 11 Entrance 51 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "d00_"
+Spawn "e00e"
+Spawn "f00_"
+Spawn "g00_"

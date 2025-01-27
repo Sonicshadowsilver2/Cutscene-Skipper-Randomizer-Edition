@@ -1,0 +1,9 @@
+Program 0x04
+Party DEFAULT
+Bgm 153 153
+AreaSettings 1 52
+ SetProgressFlag 0x1023
+ SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 55 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_50"

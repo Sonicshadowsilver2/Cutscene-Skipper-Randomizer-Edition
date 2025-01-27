@@ -1,0 +1,2959 @@
+title: Cutscene Skipper Randomizer Edition
+description: Removes and skips all cutscenes in KH2FM Randomizer!
+assets:
+#Lua Script
+- name: scripts/Cutscene Skipper.lua
+  method: copy
+  source:
+  - name: Cutscene Skipper.lua
+#ARD Editing
+- method: binarc
+  name: ard/al00.ard #Agrabah Cutscenes
+  multi:
+  - name: ard/jp/al00.ard
+  - name: ard/us/al00.ard
+  - name: ard/fr/al00.ard
+  - name: ard/gr/al00.ard
+  - name: ard/it/al00.ard
+  - name: ard/sp/al00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al02.ard #The Peddler's Shop Cutscenes
+  multi:
+  - name: ard/jp/al02.ard
+  - name: ard/us/al02.ard
+  - name: ard/fr/al02.ard
+  - name: ard/gr/al02.ard
+  - name: ard/it/al02.ard
+  - name: ard/sp/al02.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al03.ard #The Palace Cutscenes
+  multi:
+  - name: ard/jp/al03.ard
+  - name: ard/us/al03.ard
+  - name: ard/fr/al03.ard
+  - name: ard/gr/al03.ard
+  - name: ard/it/al03.ard
+  - name: ard/sp/al03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al04.ard #Vault Cutscenes
+  multi:
+  - name: ard/jp/al04.ard
+  - name: ard/us/al04.ard
+  - name: ard/fr/al04.ard
+  - name: ard/gr/al04.ard
+  - name: ard/it/al04.ard
+  - name: ard/sp/al04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al05.ard #Above Agrabah Cutscenes
+  multi:
+  - name: ard/jp/al05.ard
+  - name: ard/us/al05.ard
+  - name: ard/fr/al05.ard
+  - name: ard/gr/al05.ard
+  - name: ard/it/al05.ard
+  - name: ard/sp/al05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al06.ard #Palace Walls Cutscenes
+  multi:
+  - name: ard/jp/al06.ard
+  - name: ard/us/al06.ard
+  - name: ard/fr/al06.ard
+  - name: ard/gr/al06.ard
+  - name: ard/it/al06.ard
+  - name: ard/sp/al06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al07.ard #The Cave of Wonders: Entrance Cutscenes
+  multi:
+  - name: ard/jp/al07.ard
+  - name: ard/us/al07.ard
+  - name: ard/fr/al07.ard
+  - name: ard/gr/al07.ard
+  - name: ard/it/al07.ard
+  - name: ard/sp/al07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al09.ard #The Cave of Wonders: Stone Guardians Cutscenes
+  multi:
+  - name: ard/jp/al09.ard
+  - name: ard/us/al09.ard
+  - name: ard/fr/al09.ard
+  - name: ard/gr/al09.ard
+  - name: ard/it/al09.ard
+  - name: ard/sp/al09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al10.ard #The Cave of Wonders: Treasure Room Cutscenes
+  multi:
+  - name: ard/jp/al10.ard
+  - name: ard/us/al10.ard
+  - name: ard/fr/al10.ard
+  - name: ard/gr/al10.ard
+  - name: ard/it/al10.ard
+  - name: ard/sp/al10.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al11.ard #Ruined Chamber Cutscenes
+  multi:
+  - name: ard/jp/al11.ard
+  - name: ard/us/al11.ard
+  - name: ard/fr/al11.ard
+  - name: ard/gr/al11.ard
+  - name: ard/it/al11.ard
+  - name: ard/sp/al11.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al11evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al13.ard #The Cave of Wonders: Chasm of Challenges Cutscenes
+  multi:
+  - name: ard/jp/al13.ard
+  - name: ard/us/al13.ard
+  - name: ard/fr/al13.ard
+  - name: ard/gr/al13.ard
+  - name: ard/it/al13.ard
+  - name: ard/sp/al13.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al13evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al14.ard #Sandswept Ruins Cutscenes
+  multi:
+  - name: ard/jp/al14.ard
+  - name: ard/us/al14.ard
+  - name: ard/fr/al14.ard
+  - name: ard/gr/al14.ard
+  - name: ard/it/al14.ard
+  - name: ard/sp/al14.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al14evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/al15.ard #The Peddler Shop (Rich) Cutscenes
+  multi:
+  - name: ard/jp/al15.ard
+  - name: ard/us/al15.ard
+  - name: ard/fr/al15.ard
+  - name: ard/gr/al15.ard
+  - name: ard/it/al15.ard
+  - name: ard/sp/al15.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/al15evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb00.ard #Entrance Hall Cutscenes
+  multi:
+  - name: ard/jp/bb00.ard
+  - name: ard/us/bb00.ard
+  - name: ard/fr/bb00.ard
+  - name: ard/gr/bb00.ard
+  - name: ard/it/bb00.ard
+  - name: ard/sp/bb00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb01.ard #Parlor Cutscenes
+  multi:
+  - name: ard/jp/bb01.ard
+  - name: ard/us/bb01.ard
+  - name: ard/fr/bb01.ard
+  - name: ard/gr/bb01.ard
+  - name: ard/it/bb01.ard
+  - name: ard/sp/bb01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb02.ard #Belle's Room Cutscenes
+  multi:
+  - name: ard/jp/bb02.ard
+  - name: ard/us/bb02.ard
+  - name: ard/fr/bb02.ard
+  - name: ard/gr/bb02.ard
+  - name: ard/it/bb02.ard
+  - name: ard/sp/bb02.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb03.ard #The Beast's Room Cutscenes
+  multi:
+  - name: ard/jp/bb03.ard
+  - name: ard/us/bb03.ard
+  - name: ard/fr/bb03.ard
+  - name: ard/gr/bb03.ard
+  - name: ard/it/bb03.ard
+  - name: ard/sp/bb03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb04.ard #Ballroom
+  multi:
+  - name: ard/jp/bb04.ard
+  - name: ard/us/bb04.ard
+  - name: ard/fr/bb04.ard
+  - name: ard/gr/bb04.ard
+  - name: ard/it/bb04.ard
+  - name: ard/sp/bb04.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/bb04map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb05.ard #Ballroom (Dark) Cutscenes
+  multi:
+  - name: ard/jp/bb05.ard
+  - name: ard/us/bb05.ard
+  - name: ard/fr/bb05.ard
+  - name: ard/gr/bb05.ard
+  - name: ard/it/bb05.ard
+  - name: ard/sp/bb05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb06.ard #Courtyard Cutscenes
+  multi:
+  - name: ard/jp/bb06.ard
+  - name: ard/us/bb06.ard
+  - name: ard/fr/bb06.ard
+  - name: ard/gr/bb06.ard
+  - name: ard/it/bb06.ard
+  - name: ard/sp/bb06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb08.ard #The West Hall Cutscenes
+  multi:
+  - name: ard/jp/bb08.ard
+  - name: ard/us/bb08.ard
+  - name: ard/fr/bb08.ard
+  - name: ard/gr/bb08.ard
+  - name: ard/it/bb08.ard
+  - name: ard/sp/bb08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb09.ard #The West Wing Cutscenes
+  multi:
+  - name: ard/jp/bb09.ard
+  - name: ard/us/bb09.ard
+  - name: ard/fr/bb09.ard
+  - name: ard/gr/bb09.ard
+  - name: ard/it/bb09.ard
+  - name: ard/sp/bb09.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/bb09btl.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb10.ard #Dungeon Cutscenes
+  multi:
+  - name: ard/jp/bb10.ard
+  - name: ard/us/bb10.ard
+  - name: ard/fr/bb10.ard
+  - name: ard/gr/bb10.ard
+  - name: ard/it/bb10.ard
+  - name: ard/sp/bb10.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb11.ard #Undercroft Cutscenes
+  multi:
+  - name: ard/jp/bb11.ard
+  - name: ard/us/bb11.ard
+  - name: ard/fr/bb11.ard
+  - name: ard/gr/bb11.ard
+  - name: ard/it/bb11.ard
+  - name: ard/sp/bb11.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb11evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb12.ard #Secret Passage Cutscenes
+  multi:
+  - name: ard/jp/bb12.ard
+  - name: ard/us/bb12.ard
+  - name: ard/fr/bb12.ard
+  - name: ard/gr/bb12.ard
+  - name: ard/it/bb12.ard
+  - name: ard/sp/bb12.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb12evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/bb15.ard #Bridge Cutscenes
+  multi:
+  - name: ard/jp/bb15.ard
+  - name: ard/us/bb15.ard
+  - name: ard/fr/bb15.ard
+  - name: ard/gr/bb15.ard
+  - name: ard/it/bb15.ard
+  - name: ard/sp/bb15.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/bb15evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca00.ard #Rampart Cutscenes
+  multi:
+  - name: ard/jp/ca00.ard
+  - name: ard/us/ca00.ard
+  - name: ard/fr/ca00.ard
+  - name: ard/gr/ca00.ard
+  - name: ard/it/ca00.ard
+  - name: ard/sp/ca00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca01.ard #Harbor Cutscenes
+  multi:
+  - name: ard/jp/ca01.ard
+  - name: ard/us/ca01.ard
+  - name: ard/fr/ca01.ard
+  - name: ard/gr/ca01.ard
+  - name: ard/it/ca01.ard
+  - name: ard/sp/ca01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca02.ard #Town Cutscenes
+  multi:
+  - name: ard/jp/ca02.ard
+  - name: ard/us/ca02.ard
+  - name: ard/fr/ca02.ard
+  - name: ard/gr/ca02.ard
+  - name: ard/it/ca02.ard
+  - name: ard/sp/ca02.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca03.ard #The Interceptor Cutscenes
+  multi:
+  - name: ard/jp/ca03.ard
+  - name: ard/us/ca03.ard
+  - name: ard/fr/ca03.ard
+  - name: ard/gr/ca03.ard
+  - name: ard/it/ca03.ard
+  - name: ard/sp/ca03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca04.ard #The Interceptor: Ship's Hold Cutscenes
+  multi:
+  - name: ard/jp/ca04.ard
+  - name: ard/us/ca04.ard
+  - name: ard/fr/ca04.ard
+  - name: ard/gr/ca04.ard
+  - name: ard/it/ca04.ard
+  - name: ard/sp/ca04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca05.ard #The Black Pearl Cutscenes
+  multi:
+  - name: ard/jp/ca05.ard
+  - name: ard/us/ca05.ard
+  - name: ard/fr/ca05.ard
+  - name: ard/gr/ca05.ard
+  - name: ard/it/ca05.ard
+  - name: ard/sp/ca05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca06.ard #The Black Pearl: Captain's Stateroom Cutscenes
+  multi:
+  - name: ard/jp/ca06.ard
+  - name: ard/us/ca06.ard
+  - name: ard/fr/ca06.ard
+  - name: ard/gr/ca06.ard
+  - name: ard/it/ca06.ard
+  - name: ard/sp/ca06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca07.ard #The Interceptor (Medallion Fight) Cutscenes
+  multi:
+  - name: ard/jp/ca07.ard
+  - name: ard/us/ca07.ard
+  - name: ard/fr/ca07.ard
+  - name: ard/gr/ca07.ard
+  - name: ard/it/ca07.ard
+  - name: ard/sp/ca07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca09.ard #Isla de Muerta: Cave Mouth Cutscenes
+  multi:
+  - name: ard/jp/ca09.ard
+  - name: ard/us/ca09.ard
+  - name: ard/fr/ca09.ard
+  - name: ard/gr/ca09.ard
+  - name: ard/it/ca09.ard
+  - name: ard/sp/ca09.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/ca09btl.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca10.ard #Isla de Muerta: Treasure Heap Cutscenes
+  multi:
+  - name: ard/jp/ca10.ard
+  - name: ard/us/ca10.ard
+  - name: ard/fr/ca10.ard
+  - name: ard/gr/ca10.ard
+  - name: ard/it/ca10.ard
+  - name: ard/sp/ca10.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/ca10map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/ca10btl.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca12.ard #Isla de Muerta: Powder Store Cutscenes
+  multi:
+  - name: ard/jp/ca12.ard
+  - name: ard/us/ca12.ard
+  - name: ard/fr/ca12.ard
+  - name: ard/gr/ca12.ard
+  - name: ard/it/ca12.ard
+  - name: ard/sp/ca12.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/ca12btl.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca13.ard #Isla de Muerta: Moonlight Nook Cutscenes
+  multi:
+  - name: ard/jp/ca13.ard
+  - name: ard/us/ca13.ard
+  - name: ard/fr/ca13.ard
+  - name: ard/gr/ca13.ard
+  - name: ard/it/ca13.ard
+  - name: ard/sp/ca13.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/ca13btl.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca14.ard #Ship Graveyard: Seadrift Keep Cutscenes
+  multi:
+  - name: ard/jp/ca14.ard
+  - name: ard/us/ca14.ard
+  - name: ard/fr/ca14.ard
+  - name: ard/gr/ca14.ard
+  - name: ard/it/ca14.ard
+  - name: ard/sp/ca14.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/ca14btl.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca14evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca15.ard #Ship Graveyard: Seadrift Row Cutscenes
+  multi:
+  - name: ard/jp/ca15.ard
+  - name: ard/us/ca15.ard
+  - name: ard/fr/ca15.ard
+  - name: ard/gr/ca15.ard
+  - name: ard/it/ca15.ard
+  - name: ard/sp/ca15.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/ca15btl.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca18.ard #The Black Pearl (Grim Reaper I) Cutscenes
+  multi:
+  - name: ard/jp/ca18.ard
+  - name: ard/us/ca18.ard
+  - name: ard/fr/ca18.ard
+  - name: ard/gr/ca18.ard
+  - name: ard/it/ca18.ard
+  - name: ard/sp/ca18.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca18evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/ca24.ard #Harbor (Special) Cutscenes
+  multi:
+  - name: ard/jp/ca24.ard
+  - name: ard/us/ca24.ard
+  - name: ard/fr/ca24.ard
+  - name: ard/gr/ca24.ard
+  - name: ard/it/ca24.ard
+  - name: ard/sp/ca24.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/ca24evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/dc00.ard #Audience Chamber Cutscenes
+  multi:
+  - name: ard/jp/dc00.ard
+  - name: ard/us/dc00.ard
+  - name: ard/fr/dc00.ard
+  - name: ard/gr/dc00.ard
+  - name: ard/it/dc00.ard
+  - name: ard/sp/dc00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/dc00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/dc02.ard #Colonnade Cutscenes
+  multi:
+  - name: ard/jp/dc02.ard
+  - name: ard/us/dc02.ard
+  - name: ard/fr/dc02.ard
+  - name: ard/gr/dc02.ard
+  - name: ard/it/dc02.ard
+  - name: ard/sp/dc02.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/dc02map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/dc02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/dc03.ard #Courtyard Cutscenes
+  multi:
+  - name: ard/jp/dc03.ard
+  - name: ard/us/dc03.ard
+  - name: ard/fr/dc03.ard
+  - name: ard/gr/dc03.ard
+  - name: ard/it/dc03.ard
+  - name: ard/sp/dc03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/dc03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/dc04.ard #The Hall of the Cornerstone (Dark) Cutscenes
+  multi:
+  - name: ard/jp/dc04.ard
+  - name: ard/us/dc04.ard
+  - name: ard/fr/dc04.ard
+  - name: ard/gr/dc04.ard
+  - name: ard/it/dc04.ard
+  - name: ard/sp/dc04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/dc04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/dc05.ard #The Hall of the Cornerstone Cutscenes
+  multi:
+  - name: ard/jp/dc05.ard
+  - name: ard/us/dc05.ard
+  - name: ard/fr/dc05.ard
+  - name: ard/gr/dc05.ard
+  - name: ard/it/dc05.ard
+  - name: ard/sp/dc05.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/dc05btl.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/dc05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh01.ard #Alley to Between Cutscenes
+  multi:
+  - name: ard/jp/eh01.ard
+  - name: ard/us/eh01.ard
+  - name: ard/fr/eh01.ard
+  - name: ard/gr/eh01.ard
+  - name: ard/it/eh01.ard
+  - name: ard/sp/e021.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh03.ard #Memory's Skyscraper Cutscenes
+  multi:
+  - name: ard/jp/eh03.ard
+  - name: ard/us/eh03.ard
+  - name: ard/fr/eh03.ard
+  - name: ard/gr/eh03.ard
+  - name: ard/it/eh03.ard
+  - name: ard/sp/eh03.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/eh03map.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh04.ard #The Brink of Despair Cutscenes
+  multi:
+  - name: ard/jp/eh04.ard
+  - name: ard/us/eh04.ard
+  - name: ard/fr/eh04.ard
+  - name: ard/gr/eh04.ard
+  - name: ard/it/eh04.ard
+  - name: ard/sp/eh04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh10.ard #Hall of Empty Melodies (Bottom Level) Cutscenes
+  multi:
+  - name: ard/jp/eh10.ard
+  - name: ard/us/eh10.ard
+  - name: ard/fr/eh10.ard
+  - name: ard/gr/eh10.ard
+  - name: ard/it/eh10.ard
+  - name: ard/sp/eh10.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh11.ard #Hallway of Empty Melodies (Top Level) Cutscenes
+  multi:
+  - name: ard/jp/eh11.ard
+  - name: ard/us/eh11.ard
+  - name: ard/fr/eh11.ard
+  - name: ard/gr/eh11.ard
+  - name: ard/it/eh11.ard
+  - name: ard/sp/eh11.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh11evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh12.ard #Naught's Skyway Cutscenes
+  multi:
+  - name: ard/jp/eh12.ard
+  - name: ard/us/eh12.ard
+  - name: ard/fr/eh12.ard
+  - name: ard/gr/eh12.ard
+  - name: ard/it/eh12.ard
+  - name: ard/sp/eh12.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh12evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh13.ard #Proof of Existence Cutscenes
+  multi:
+  - name: ard/jp/eh13.ard
+  - name: ard/us/eh13.ard
+  - name: ard/fr/eh13.ard
+  - name: ard/gr/eh13.ard
+  - name: ard/it/eh13.ard
+  - name: ard/sp/eh13.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh13evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh14.ard #Havoc's Divide Cutscenes
+  multi:
+  - name: ard/jp/eh14.ard
+  - name: ard/us/eh14.ard
+  - name: ard/fr/eh14.ard
+  - name: ard/gr/eh14.ard
+  - name: ard/it/eh14.ard
+  - name: ard/sp/eh14.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh14evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh15.ard #Saix Cutscenes
+  multi:
+  - name: ard/jp/eh15.ard
+  - name: ard/us/eh15.ard
+  - name: ard/fr/eh15.ard
+  - name: ard/gr/eh15.ard
+  - name: ard/it/eh15.ard
+  - name: ard/sp/eh15.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh15evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh16.ard #Riku Joins Party Cutscene
+  multi:
+  - name: ard/jp/eh16.ard
+  - name: ard/us/eh16.ard
+  - name: ard/fr/eh16.ard
+  - name: ard/gr/eh16.ard
+  - name: ard/it/eh16.ard
+  - name: ard/sp/eh16.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh16evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh17.ard #Ruin and Creaton's Passage Cutscenes
+  multi:
+  - name: ard/jp/eh17.ard
+  - name: ard/us/eh17.ard
+  - name: ard/fr/eh17.ard
+  - name: ard/gr/eh17.ard
+  - name: ard/it/eh17.ard
+  - name: ard/sp/eh17.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh17evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh18.ard #Altar of Naught
+  multi:
+  - name: ard/jp/eh18.ard
+  - name: ard/us/eh18.ard
+  - name: ard/fr/eh18.ard
+  - name: ard/gr/eh18.ard
+  - name: ard/it/eh18.ard
+  - name: ard/sp/eh18.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/eh18map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh18evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh19.ard #Memory's Contortion Cutscenes
+  multi:
+  - name: ard/jp/eh19.ard
+  - name: ard/us/eh19.ard
+  - name: ard/fr/eh19.ard
+  - name: ard/gr/eh19.ard
+  - name: ard/it/eh19.ard
+  - name: ard/sp/eh19.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh19evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh20.ard #The World of Nothing (Final Xemnas) Cutscenes
+  multi:
+  - name: ard/jp/eh20.ard
+  - name: ard/us/eh20.ard
+  - name: ard/fr/eh20.ard
+  - name: ard/gr/eh20.ard
+  - name: ard/it/eh20.ard
+  - name: ard/sp/eh20.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh20evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh21.ard #Station of Awakening Cutscenes
+  multi:
+  - name: ard/jp/eh21.ard
+  - name: ard/us/eh21.ard
+  - name: ard/fr/eh21.ard
+  - name: ard/gr/eh21.ard
+  - name: ard/it/eh21.ard
+  - name: ard/sp/eh21.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh21evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh22.ard #Post Dragon Xemnas Cutscenes
+  multi:
+  - name: ard/jp/eh22.ard
+  - name: ard/us/eh22.ard
+  - name: ard/fr/eh22.ard
+  - name: ard/gr/eh22.ard
+  - name: ard/it/eh22.ard
+  - name: ard/sp/eh22.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh22evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh23.ard #Pre-Final Xemnas Cutscenes
+  multi:
+  - name: ard/jp/eh23.ard
+  - name: ard/us/eh23.ard
+  - name: ard/fr/eh23.ard
+  - name: ard/gr/eh23.ard
+  - name: ard/it/eh23.ard
+  - name: ard/sp/eh23.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh23evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh24.ard #Pre-Armor Xemnas II Cutscenes
+  multi:
+  - name: ard/jp/eh24.ard
+  - name: ard/us/eh24.ard
+  - name: ard/fr/eh24.ard
+  - name: ard/gr/eh24.ard
+  - name: ard/it/eh24.ard
+  - name: ard/sp/eh24.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh24evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/eh25.ard #Pre-Armor Xemnas I Cutscenes
+  multi:
+  - name: ard/jp/eh25.ard
+  - name: ard/us/eh25.ard
+  - name: ard/fr/eh25.ard
+  - name: ard/gr/eh25.ard
+  - name: ard/it/eh25.ard
+  - name: ard/sp/eh25.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/eh25evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/es00.ard #Ending Cutscenes
+  multi:
+  - name: ard/jp/es00.ard
+  - name: ard/us/es00.ard
+  - name: ard/fr/es00.ard
+  - name: ard/gr/es00.ard
+  - name: ard/it/es00.ard
+  - name: ard/sp/es00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/es00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb01.ard #Dark Depths Cutscenes
+  multi:
+  - name: ard/jp/hb01.ard
+  - name: ard/us/hb01.ard
+  - name: ard/fr/hb01.ard
+  - name: ard/gr/hb01.ard
+  - name: ard/it/hb01.ard
+  - name: ard/sp/hb01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb03.ard #Crystal Fissure Cutscenes
+  multi:
+  - name: ard/jp/hb03.ard
+  - name: ard/us/hb03.ard
+  - name: ard/fr/hb03.ard
+  - name: ard/gr/hb03.ard
+  - name: ard/it/hb03.ard
+  - name: ard/sp/hb03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb04.ard #Castle Gate Cutscenes
+  multi:
+  - name: ard/jp/hb04.ard
+  - name: ard/us/hb04.ard
+  - name: ard/fr/hb04.ard
+  - name: ard/gr/hb04.ard
+  - name: ard/it/hb04.ard
+  - name: ard/sp/hb04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb05.ard #Ansem's Study Cutscenes
+  multi:
+  - name: ard/jp/hb05.ard
+  - name: ard/us/hb05.ard
+  - name: ard/fr/hb05.ard
+  - name: ard/gr/hb05.ard
+  - name: ard/it/hb05.ard
+  - name: ard/sp/hb05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb06.ard #Postern Cutscenes
+  multi:
+  - name: ard/jp/hb06.ard
+  - name: ard/us/hb06.ard
+  - name: ard/fr/hb06.ard
+  - name: ard/gr/hb06.ard
+  - name: ard/it/hb06.ard
+  - name: ard/sp/hb06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb08.ard #Bailey Cutscenes
+  multi:
+  - name: ard/jp/hb08.ard
+  - name: ard/us/hb08.ard
+  - name: ard/fr/hb08.ard
+  - name: ard/gr/hb08.ard
+  - name: ard/it/hb08.ard
+  - name: ard/sp/hb08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb10.ard #Marketplace Cutscenes
+  multi:
+  - name: ard/jp/hb10.ard
+  - name: ard/us/hb10.ard
+  - name: ard/fr/hb10.ard
+  - name: ard/gr/hb10.ard
+  - name: ard/it/hb10.ard
+  - name: ard/sp/hb10.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb11.ard #Corridors Cutscenes
+  multi:
+  - name: ard/jp/hb11.ard
+  - name: ard/us/hb11.ard
+  - name: ard/fr/hb11.ard
+  - name: ard/gr/hb11.ard
+  - name: ard/it/hb11.ard
+  - name: ard/sp/hb11.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/hb11btl.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb11evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb13.ard #Merlin's House Cutscenes
+  multi:
+  - name: ard/jp/hb13.ard
+  - name: ard/us/hb13.ard
+  - name: ard/fr/hb13.ard
+  - name: ard/gr/hb13.ard
+  - name: ard/it/hb13.ard
+  - name: ard/sp/hb13.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb13evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb18.ard #Restoration Site (Destroyed) Cutscenes
+  multi:
+  - name: ard/jp/hb18.ard
+  - name: ard/us/hb18.ard
+  - name: ard/fr/hb18.ard
+  - name: ard/gr/hb18.ard
+  - name: ard/it/hb18.ard
+  - name: ard/sp/hb18.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/hb18map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb18evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb19.ard #Bailey (Destroyed) Cutscenes
+  multi:
+  - name: ard/jp/hb19.ard
+  - name: ard/us/hb19.ard
+  - name: ard/fr/hb19.ard
+  - name: ard/gr/hb19.ard
+  - name: ard/it/hb19.ard
+  - name: ard/sp/hb19.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb19evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb20.ard #Corridors (Forced Fight) Cutscenes
+  multi:
+  - name: ard/jp/hb20.ard
+  - name: ard/us/hb20.ard
+  - name: ard/fr/hb20.ard
+  - name: ard/gr/hb20.ard
+  - name: ard/it/hb20.ard
+  - name: ard/sp/hb20.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb20evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb21.ard #Cavern of Remembrance: Depths Cutscenes
+  multi:
+  - name: ard/jp/hb21.ard
+  - name: ard/us/hb21.ard
+  - name: ard/fr/hb21.ard
+  - name: ard/gr/hb21.ard
+  - name: ard/it/hb21.ard
+  - name: ard/sp/hb21.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb21evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb22.ard #Cavern of Remembrance: Mining Area Cutscenes
+  multi:
+  - name: ard/jp/hb22.ard
+  - name: ard/us/hb22.ard
+  - name: ard/fr/hb22.ard
+  - name: ard/gr/hb22.ard
+  - name: ard/it/hb22.ard
+  - name: ard/sp/hb22.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb22evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/hb26.ard #Garden of Assemblage Cutscenes
+  multi:
+  - name: ard/jp/hb26.ard
+  - name: ard/us/hb26.ard
+  - name: ard/fr/hb26.ard
+  - name: ard/gr/hb26.ard
+  - name: ard/it/hb26.ard
+  - name: ard/sp/hb26.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/hb26evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he00.ard #The Coliseum Cutscenes
+  multi:
+  - name: ard/jp/he00.ard
+  - name: ard/us/he00.ard
+  - name: ard/fr/he00.ard
+  - name: ard/gr/he00.ard
+  - name: ard/it/he00.ard
+  - name: ard/sp/he00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he01.ard #Coliseum Gates Cutscenes
+  multi:
+  - name: ard/jp/he01.ard
+  - name: ard/us/he01.ard
+  - name: ard/fr/he01.ard
+  - name: ard/gr/he01.ard
+  - name: ard/it/he01.ard
+  - name: ard/sp/he01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he03.ard #Underworld Entrance Cutscenes
+  multi:
+  - name: ard/jp/he03.ard
+  - name: ard/us/he03.ard
+  - name: ard/fr/he03.ard
+  - name: ard/gr/he03.ard
+  - name: ard/it/he03.ard
+  - name: ard/sp/he03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he05.ard #Valley of the Dead Cutscenes
+  multi:
+  - name: ard/jp/he05.ard
+  - name: ard/us/he05.ard
+  - name: ard/fr/he05.ard
+  - name: ard/gr/he05.ard
+  - name: ard/it/he05.ard
+  - name: ard/sp/he05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he06.ard #Hades' Chamber Cutscenes
+  multi:
+  - name: ard/jp/he06.ard
+  - name: ard/us/he06.ard
+  - name: ard/fr/he06.ard
+  - name: ard/gr/he06.ard
+  - name: ard/it/he06.ard
+  - name: ard/sp/he06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he07.ard #Cave of the Dead: Entrance Cutscenes
+  multi:
+  - name: ard/jp/he07.ard
+  - name: ard/us/he07.ard
+  - name: ard/fr/he07.ard
+  - name: ard/gr/he07.ard
+  - name: ard/it/he07.ard
+  - name: ard/sp/he07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he08.ard #Well of Captivity Cutscenes
+  multi:
+  - name: ard/jp/he08.ard
+  - name: ard/us/he08.ard
+  - name: ard/fr/he08.ard
+  - name: ard/gr/he08.ard
+  - name: ard/it/he08.ard
+  - name: ard/sp/he08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he09.ard #The Underdrome Cutscenes
+  multi:
+  - name: ard/jp/he09.ard
+  - name: ard/us/he09.ard
+  - name: ard/fr/he09.ard
+  - name: ard/gr/he09.ard
+  - name: ard/it/he09.ard
+  - name: ard/sp/he09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he10.ard #Cave of the Dead: Inner Chamber Cutscenes
+  multi:
+  - name: ard/jp/he10.ard
+  - name: ard/us/he10.ard
+  - name: ard/fr/he10.ard
+  - name: ard/gr/he10.ard
+  - name: ard/it/he10.ard
+  - name: ard/sp/he10.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he11.ard #Underworld Caverns: Entrance Cutscenes
+  multi:
+  - name: ard/jp/he11.ard
+  - name: ard/us/he11.ard
+  - name: ard/fr/he11.ard
+  - name: ard/gr/he11.ard
+  - name: ard/it/he11.ard
+  - name: ard/sp/he11.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he11evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he12.ard #The Lock Cutscenes
+  multi:
+  - name: ard/jp/he12.ard
+  - name: ard/us/he12.ard
+  - name: ard/fr/he12.ard
+  - name: ard/gr/he12.ard
+  - name: ard/it/he12.ard
+  - name: ard/sp/he12.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he12evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he13.ard #The Underdrome Cutscenes
+  multi:
+  - name: ard/jp/he13.ard
+  - name: ard/us/he13.ard
+  - name: ard/fr/he13.ard
+  - name: ard/gr/he13.ard
+  - name: ard/it/he13.ard
+  - name: ard/sp/he13.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he13evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he15.ard #Cave of the Dead: Passage Cutscenes
+  multi:
+  - name: ard/jp/he15.ard
+  - name: ard/us/he15.ard
+  - name: ard/fr/he15.ard
+  - name: ard/gr/he15.ard
+  - name: ard/it/he15.ard
+  - name: ard/sp/he15.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he15evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he17.ard #Underworld Caverns: Atrium Cutscenes
+  multi:
+  - name: ard/jp/he17.ard
+  - name: ard/us/he17.ard
+  - name: ard/fr/he17.ard
+  - name: ard/gr/he17.ard
+  - name: ard/it/he17.ard
+  - name: ard/sp/he17.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he17evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/he19.ard #The Underdrome (Hades) Cutscenes
+  multi:
+  - name: ard/jp/he19.ard
+  - name: ard/us/he19.ard
+  - name: ard/fr/he19.ard
+  - name: ard/gr/he19.ard
+  - name: ard/it/he19.ard
+  - name: ard/sp/he19.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/he19evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk00.ard #Pride Rock Cutscenes
+  multi:
+  - name: ard/jp/lk00.ard
+  - name: ard/us/lk00.ard
+  - name: ard/fr/lk00.ard
+  - name: ard/gr/lk00.ard
+  - name: ard/it/lk00.ard
+  - name: ard/sp/lk00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk01.ard #Stone Hollow Cutscenes
+  multi:
+  - name: ard/jp/lk01.ard
+  - name: ard/us/lk01.ard
+  - name: ard/fr/lk01.ard
+  - name: ard/gr/lk01.ard
+  - name: ard/it/lk01.ard
+  - name: ard/sp/lk01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk02.ard #The King's Den Cutscenes
+  multi:
+  - name: ard/jp/lk02.ard
+  - name: ard/us/lk02.ard
+  - name: ard/fr/lk02.ard
+  - name: ard/gr/lk02.ard
+  - name: ard/it/lk02.ard
+  - name: ard/sp/lk02.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk03.ard #Wildebeest Valley Cutscenes
+  multi:
+  - name: ard/jp/lk03.ard
+  - name: ard/us/lk03.ard
+  - name: ard/fr/lk03.ard
+  - name: ard/gr/lk03.ard
+  - name: ard/it/lk03.ard
+  - name: ard/sp/lk03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk04.ard #The Savannah Cutscenes
+  multi:
+  - name: ard/jp/lk04.ard
+  - name: ard/us/lk04.ard
+  - name: ard/fr/lk04.ard
+  - name: ard/gr/lk04.ard
+  - name: ard/it/lk04.ard
+  - name: ard/sp/lk04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk05.ard #Elephant Graveyard Cutscenes
+  multi:
+  - name: ard/jp/lk05.ard
+  - name: ard/us/lk05.ard
+  - name: ard/fr/lk05.ard
+  - name: ard/gr/lk05.ard
+  - name: ard/it/lk05.ard
+  - name: ard/sp/lk05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk06.ard #Gorge Cutscenes
+  multi:
+  - name: ard/jp/lk06.ard
+  - name: ard/us/lk06.ard
+  - name: ard/fr/lk06.ard
+  - name: ard/gr/lk06.ard
+  - name: ard/it/lk06.ard
+  - name: ard/sp/lk06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk07.ard #Wastelands Cutscenes
+  multi:
+  - name: ard/jp/lk07.ard
+  - name: ard/us/lk07.ard
+  - name: ard/fr/lk07.ard
+  - name: ard/gr/lk07.ard
+  - name: ard/it/lk07.ard
+  - name: ard/sp/lk07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk08.ard #Jungle Cutscenes
+  multi:
+  - name: ard/jp/lk08.ard
+  - name: ard/us/lk08.ard
+  - name: ard/fr/lk08.ard
+  - name: ard/gr/lk08.ard
+  - name: ard/it/lk08.ard
+  - name: ard/sp/lk08.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/lk08btl.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk09.ard #Oasis Cutscenes
+  multi:
+  - name: ard/jp/lk09.ard
+  - name: ard/us/lk09.ard
+  - name: ard/fr/lk09.ard
+  - name: ard/gr/lk09.ard
+  - name: ard/it/lk09.ard
+  - name: ard/sp/lk09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk13.ard #Peak Map
+  multi:
+  - name: ard/jp/lk13.ard
+  - name: ard/us/lk13.ard
+  - name: ard/fr/lk13.ard
+  - name: ard/gr/lk13.ard
+  - name: ard/it/lk13.ard
+  - name: ard/sp/lk13.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/lk13map.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk14.ard #Scar's Darkness Cutscenes
+  multi:
+  - name: ard/jp/lk14.ard
+  - name: ard/us/lk14.ard
+  - name: ard/fr/lk14.ard
+  - name: ard/gr/lk14.ard
+  - name: ard/it/lk14.ard
+  - name: ard/sp/lk14.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk14evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lk15.ard #The Savannah (Groundshaker) Cutscenes
+  multi:
+  - name: ard/jp/lk15.ard
+  - name: ard/us/lk15.ard
+  - name: ard/fr/lk15.ard
+  - name: ard/gr/lk15.ard
+  - name: ard/it/lk15.ard
+  - name: ard/sp/lk15.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lk15evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lm01.ard #Ariel's Grotto Cutscenes
+  multi:
+  - name: ard/jp/lm01.ard
+  - name: ard/us/lm01.ard
+  - name: ard/fr/lm01.ard
+  - name: ard/gr/lm01.ard
+  - name: ard/it/lm01.ard
+  - name: ard/sp/lm01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lm01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lm02.ard #Undersea Courtyard Cutscenes
+  multi:
+  - name: ard/jp/lm02.ard
+  - name: ard/us/lm02.ard
+  - name: ard/fr/lm02.ard
+  - name: ard/gr/lm02.ard
+  - name: ard/it/lm02.ard
+  - name: ard/sp/lm02.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lm02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lm03.ard #Undersea Courtyard (Under the Sea) Cutscenes
+  multi:
+  - name: ard/jp/lm03.ard
+  - name: ard/us/lm03.ard
+  - name: ard/fr/lm03.ard
+  - name: ard/gr/lm03.ard
+  - name: ard/it/lm03.ard
+  - name: ard/sp/lm03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lm03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lm04.ard #The Palace: Performance Hall Cutscenes
+  multi:
+  - name: ard/jp/lm04.ard
+  - name: ard/us/lm04.ard
+  - name: ard/fr/lm04.ard
+  - name: ard/gr/lm04.ard
+  - name: ard/it/lm04.ard
+  - name: ard/sp/lm04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lm04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/lm09.ard #Wrath of the Sea Cutscenes
+  multi:
+  - name: ard/jp/lm09.ard
+  - name: ard/us/lm09.ard
+  - name: ard/fr/lm09.ard
+  - name: ard/gr/lm09.ard
+  - name: ard/it/lm09.ard
+  - name: ard/sp/lm09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/lm09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu00.ard #Bamboo Grove Cutscenes
+  multi:
+  - name: ard/jp/mu00.ard
+  - name: ard/us/mu00.ard
+  - name: ard/fr/mu00.ard
+  - name: ard/gr/mu00.ard
+  - name: ard/it/mu00.ard
+  - name: ard/sp/mu00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu01.ard #Encampment Cutscenes
+  multi:
+  - name: ard/jp/mu01.ard
+  - name: ard/us/mu01.ard
+  - name: ard/fr/mu01.ard
+  - name: ard/gr/mu01.ard
+  - name: ard/it/mu01.ard
+  - name: ard/sp/mu01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu02.ard #Checkpoint Cutscenes
+  multi:
+  - name: ard/jp/mu02.ard
+  - name: ard/us/mu02.ard
+  - name: ard/fr/mu02.ard
+  - name: ard/gr/mu02.ard
+  - name: ard/it/mu02.ard
+  - name: ard/sp/mu02.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/mu02btl.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu03.ard #Mountain Trail Cutscenes
+  multi:
+  - name: ard/jp/mu03.ard
+  - name: ard/us/mu03.ard
+  - name: ard/fr/mu03.ard
+  - name: ard/gr/mu03.ard
+  - name: ard/it/mu03.ard
+  - name: ard/sp/mu03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu05.ard #Village Cave Cutscenes
+  multi:
+  - name: ard/jp/mu05.ard
+  - name: ard/us/mu05.ard
+  - name: ard/fr/mu05.ard
+  - name: ard/gr/mu05.ard
+  - name: ard/it/mu05.ard
+  - name: ard/sp/mu05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu06.ard #Ridge Cutscenes
+  multi:
+  - name: ard/jp/mu06.ard
+  - name: ard/us/mu06.ard
+  - name: ard/fr/mu06.ard
+  - name: ard/gr/mu06.ard
+  - name: ard/it/mu06.ard
+  - name: ard/sp/mu06.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/mu06map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu07.ard #Summit
+  multi:
+  - name: ard/jp/mu07.ard
+  - name: ard/us/mu07.ard
+  - name: ard/fr/mu07.ard
+  - name: ard/gr/mu07.ard
+  - name: ard/it/mu07.ard
+  - name: ard/sp/mu07.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/mu07map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu08.ard #Imperial Square Cutscenes
+  multi:
+  - name: ard/jp/mu08.ard
+  - name: ard/us/mu08.ard
+  - name: ard/fr/mu08.ard
+  - name: ard/gr/mu08.ard
+  - name: ard/it/mu08.ard
+  - name: ard/sp/mu08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu09.ard #Palace Gate Cutscenes
+  multi:
+  - name: ard/jp/mu09.ard
+  - name: ard/us/mu09.ard
+  - name: ard/fr/mu09.ard
+  - name: ard/gr/mu09.ard
+  - name: ard/it/mu09.ard
+  - name: ard/sp/mu09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu10.ard #Antechamber Cutscenes
+  multi:
+  - name: ard/jp/mu10.ard
+  - name: ard/us/mu10.ard
+  - name: ard/fr/mu10.ard
+  - name: ard/gr/mu10.ard
+  - name: ard/it/mu10.ard
+  - name: ard/sp/mu10.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/mu12.ard #Village (Destroyed) Cutscenes
+  multi:
+  - name: ard/jp/mu12.ard
+  - name: ard/us/mu12.ard
+  - name: ard/fr/mu12.ard
+  - name: ard/gr/mu12.ard
+  - name: ard/it/mu12.ard
+  - name: ard/sp/mu12.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/mu12evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm00.ard #Halloween Town Square Cutscenes
+  multi:
+  - name: ard/jp/nm00.ard
+  - name: ard/us/nm00.ard
+  - name: ard/fr/nm00.ard
+  - name: ard/gr/nm00.ard
+  - name: ard/it/nm00.ard
+  - name: ard/sp/nm00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm01.ard #Dr. Finklestein's Lab Cutscenes
+  multi:
+  - name: ard/jp/nm01.ard
+  - name: ard/us/nm01.ard
+  - name: ard/fr/nm01.ard
+  - name: ard/gr/nm01.ard
+  - name: ard/it/nm01.ard
+  - name: ard/sp/nm01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm02.ard #Graveyard Cutscenes
+  multi:
+  - name: ard/jp/nm02.ard
+  - name: ard/us/nm02.ard
+  - name: ard/fr/nm02.ard
+  - name: ard/gr/nm02.ard
+  - name: ard/it/nm02.ard
+  - name: ard/sp/nm02.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/nm02map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm03.ard #Curly Hill Cutscenes
+  multi:
+  - name: ard/jp/nm03.ard
+  - name: ard/us/nm03.ard
+  - name: ard/fr/nm03.ard
+  - name: ard/gr/nm03.ard
+  - name: ard/it/nm03.ard
+  - name: ard/sp/nm03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm04.ard #Hinterlands Cutscenes
+  multi:
+  - name: ard/jp/nm04.ard
+  - name: ard/us/nm04.ard
+  - name: ard/fr/nm04.ard
+  - name: ard/gr/nm04.ard
+  - name: ard/it/nm04.ard
+  - name: ard/sp/nm04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm05.ard #Yuletide Hill
+  multi:
+  - name: ard/jp/nm05.ard
+  - name: ard/us/nm05.ard
+  - name: ard/fr/nm05.ard
+  - name: ard/gr/nm05.ard
+  - name: ard/it/nm05.ard
+  - name: ard/sp/nm05.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/nm05btl.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm06.ard #Candy Cane Lane Cutscenes
+  multi:
+  - name: ard/jp/nm06.ard
+  - name: ard/us/nm06.ard
+  - name: ard/fr/nm06.ard
+  - name: ard/gr/nm06.ard
+  - name: ard/it/nm06.ard
+  - name: ard/sp/nm06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm07.ard #Christmas Tree Plaza Cutscenes
+  multi:
+  - name: ard/jp/nm07.ard
+  - name: ard/us/nm07.ard
+  - name: ard/fr/nm07.ard
+  - name: ard/gr/nm07.ard
+  - name: ard/it/nm07.ard
+  - name: ard/sp/nm07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm08.ard #Santa's House Cutscenes
+  multi:
+  - name: ard/jp/nm08.ard
+  - name: ard/us/nm08.ard
+  - name: ard/fr/nm08.ard
+  - name: ard/gr/nm08.ard
+  - name: ard/it/nm08.ard
+  - name: ard/sp/nm08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm09.ard #Toy Factory: Shipping and Receiving Cutscenes
+  multi:
+  - name: ard/jp/nm09.ard
+  - name: ard/us/nm09.ard
+  - name: ard/fr/nm09.ard
+  - name: ard/gr/nm09.ard
+  - name: ard/it/nm09.ard
+  - name: ard/sp/nm09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/nm10.ard #Toy Factory: The Wrapping Room Cutscenes
+  multi:
+  - name: ard/jp/nm10.ard
+  - name: ard/us/nm10.ard
+  - name: ard/fr/nm10.ard
+  - name: ard/gr/nm10.ard
+  - name: ard/it/nm10.ard
+  - name: ard/sp/nm10.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/nm10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/po01.ard #Starry Hill Cutscenes
+  multi:
+  - name: ard/jp/po01.ard
+  - name: ard/us/po01.ard
+  - name: ard/fr/po01.ard
+  - name: ard/gr/po01.ard
+  - name: ard/it/po01.ard
+  - name: ard/sp/po01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/po01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/po03.ard #Rabbit's House Cutscenes
+  multi:
+  - name: ard/jp/po03.ard
+  - name: ard/us/po03.ard
+  - name: ard/fr/po03.ard
+  - name: ard/gr/po03.ard
+  - name: ard/it/po03.ard
+  - name: ard/sp/po03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/po03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/po04.ard #Piglet's House Cutscenes
+  multi:
+  - name: ard/jp/po04.ard
+  - name: ard/us/po04.ard
+  - name: ard/fr/po04.ard
+  - name: ard/gr/po04.ard
+  - name: ard/it/po04.ard
+  - name: ard/sp/po04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/po04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/po05.ard #Kanga's House Cutscenes
+  multi:
+  - name: ard/jp/po05.ard
+  - name: ard/us/po05.ard
+  - name: ard/fr/po05.ard
+  - name: ard/gr/po05.ard
+  - name: ard/it/po05.ard
+  - name: ard/sp/po05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/po05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/po06.ard #A Windsday Tale Cutscenes
+  multi:
+  - name: ard/jp/po06.ard
+  - name: ard/us/po06.ard
+  - name: ard/fr/po06.ard
+  - name: ard/gr/po06.ard
+  - name: ard/it/po06.ard
+  - name: ard/sp/po06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/po06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/po07.ard #The Honey Hunt Cutscenes
+  multi:
+  - name: ard/jp/po07.ard
+  - name: ard/us/po07.ard
+  - name: ard/fr/po07.ard
+  - name: ard/gr/po07.ard
+  - name: ard/it/po07.ard
+  - name: ard/sp/po07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/po07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/po08.ard #Blossom Valley Cutscenes
+  multi:
+  - name: ard/jp/po08.ard
+  - name: ard/us/po08.ard
+  - name: ard/fr/po08.ard
+  - name: ard/gr/po08.ard
+  - name: ard/it/po08.ard
+  - name: ard/sp/po08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/po08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/po09.ard #The Spooky Cave Cutscenes
+  multi:
+  - name: ard/jp/po09.ard
+  - name: ard/us/po09.ard
+  - name: ard/fr/po09.ard
+  - name: ard/gr/po09.ard
+  - name: ard/it/po09.ard
+  - name: ard/sp/po09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/po09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr00.ard #Pit Cell Cutscenes
+  multi:
+  - name: ard/jp/tr00.ard
+  - name: ard/us/tr00.ard
+  - name: ard/fr/tr00.ard
+  - name: ard/gr/tr00.ard
+  - name: ard/it/tr00.ard
+  - name: ard/sp/tr00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr01.ard #Canyon Cutscenes
+  multi:
+  - name: ard/jp/tr01.ard
+  - name: ard/us/tr01.ard
+  - name: ard/fr/tr01.ard
+  - name: ard/gr/tr01.ard
+  - name: ard/it/tr01.ard
+  - name: ard/sp/tr01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr02.ard #Game Grid Cutscenes
+  multi:
+  - name: ard/jp/tr02.ard
+  - name: ard/us/tr02.ard
+  - name: ard/fr/tr02.ard
+  - name: ard/gr/tr02.ard
+  - name: ard/it/tr02.ard
+  - name: ard/sp/tr02.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr03.ard #Dataspace Cutscenes
+  multi:
+  - name: ard/jp/tr03.ard
+  - name: ard/us/tr03.ard
+  - name: ard/fr/tr03.ard
+  - name: ard/gr/tr03.ard
+  - name: ard/it/tr03.ard
+  - name: ard/sp/tr03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr04.ard #I/O Tower: Hallway Cutscenes
+  multi:
+  - name: ard/jp/tr04.ard
+  - name: ard/us/tr04.ard
+  - name: ard/fr/tr04.ard
+  - name: ard/gr/tr04.ard
+  - name: ard/it/tr04.ard
+  - name: ard/sp/tr04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr05.ard #I/O Tower: Communications Room Cutscenes
+  multi:
+  - name: ard/jp/tr05.ard
+  - name: ard/us/tr05.ard
+  - name: ard/fr/tr05.ard
+  - name: ard/gr/tr05.ard
+  - name: ard/it/tr05.ard
+  - name: ard/sp/tr05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr07.ard #Solar Sailer Simulation (Forced Fight) Cutscenes
+  multi:
+  - name: ard/jp/tr07.ard
+  - name: ard/us/tr07.ard
+  - name: ard/fr/tr07.ard
+  - name: ard/gr/tr07.ard
+  - name: ard/it/tr07.ard
+  - name: ard/sp/tr07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr08.ard #Central Computer Mesa Cutscenes
+  multi:
+  - name: ard/jp/tr08.ard
+  - name: ard/us/tr08.ard
+  - name: ard/fr/tr08.ard
+  - name: ard/gr/tr08.ard
+  - name: ard/it/tr08.ard
+  - name: ard/sp/tr08.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/tr08btl.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr09.ard #Central Computer Core Cutscenes
+  multi:
+  - name: ard/jp/tr09.ard
+  - name: ard/us/tr09.ard
+  - name: ard/fr/tr09.ard
+  - name: ard/gr/tr09.ard
+  - name: ard/it/tr09.ard
+  - name: ard/sp/tr09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tr10.ard #Solar Sailer Simulation Cutscenes
+  multi:
+  - name: ard/jp/tr10.ard
+  - name: ard/us/tr10.ard
+  - name: ard/fr/tr10.ard
+  - name: ard/gr/tr10.ard
+  - name: ard/it/tr10.ard
+  - name: ard/sp/tr10.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tr10evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt02.ard #The Usual Spot Cutscenes
+  multi:
+  - name: ard/jp/tt02.ard
+  - name: ard/us/tt02.ard
+  - name: ard/fr/tt02.ard
+  - name: ard/gr/tt02.ard
+  - name: ard/it/tt02.ard
+  - name: ard/sp/tt02.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt03.ard #Back Alley Cutscenes
+  multi:
+  - name: ard/jp/tt03.ard
+  - name: ard/us/tt03.ard
+  - name: ard/fr/tt03.ard
+  - name: ard/gr/tt03.ard
+  - name: ard/it/tt03.ard
+  - name: ard/sp/tt03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt04.ard #Sandlot Cutscenes
+  multi:
+  - name: ard/jp/tt04.ard
+  - name: ard/us/tt04.ard
+  - name: ard/fr/tt04.ard
+  - name: ard/gr/tt04.ard
+  - name: ard/it/tt04.ard
+  - name: ard/sp/tt04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt05.ard #Sandlot (Struggle Tournament) Cutscenes
+  multi:
+  - name: ard/jp/tt05.ard
+  - name: ard/us/tt05.ard
+  - name: ard/fr/tt05.ard
+  - name: ard/gr/tt05.ard
+  - name: ard/it/tt05.ard
+  - name: ard/sp/tt05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt06.ard #Market Street: Station Heights Cutscenes
+  multi:
+  - name: ard/jp/tt06.ard
+  - name: ard/us/tt06.ard
+  - name: ard/fr/tt06.ard
+  - name: ard/gr/tt06.ard
+  - name: ard/it/tt06.ard
+  - name: ard/sp/tt06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt07.ard #Market Street: Tram Common Cutscenes
+  multi:
+  - name: ard/jp/tt07.ard
+  - name: ard/us/tt07.ard
+  - name: ard/fr/tt07.ard
+  - name: ard/gr/tt07.ard
+  - name: ard/it/tt07.ard
+  - name: ard/sp/tt07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt08.ard #Station Plaza Cutscenes
+  multi:
+  - name: ard/jp/tt08.ard
+  - name: ard/us/tt08.ard
+  - name: ard/fr/tt08.ard
+  - name: ard/gr/tt08.ard
+  - name: ard/it/tt08.ard
+  - name: ard/sp/tt08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt08evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt09.ard #Central Station Cutscenes
+  multi:
+  - name: ard/jp/tt09.ard
+  - name: ard/us/tt09.ard
+  - name: ard/fr/tt09.ard
+  - name: ard/gr/tt09.ard
+  - name: ard/it/tt09.ard
+  - name: ard/sp/tt09.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt09evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt12.ard #Sunset Hill Cutscenes
+  multi:
+  - name: ard/jp/tt12.ard
+  - name: ard/us/tt12.ard
+  - name: ard/fr/tt12.ard
+  - name: ard/gr/tt12.ard
+  - name: ard/it/tt12.ard
+  - name: ard/sp/tt12.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt12evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt14.ard #The Old Mansion Cutscenes
+  multi:
+  - name: ard/jp/tt14.ard
+  - name: ard/us/tt14.ard
+  - name: ard/fr/tt14.ard
+  - name: ard/gr/tt14.ard
+  - name: ard/it/tt14.ard
+  - name: ard/sp/tt14.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt14evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt17.ard #Mansion: Library Cutscenes
+  multi:
+  - name: ard/jp/tt17.ard
+  - name: ard/us/tt17.ard
+  - name: ard/fr/tt17.ard
+  - name: ard/gr/tt17.ard
+  - name: ard/it/tt17.ard
+  - name: ard/sp/tt17.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt17evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt18.ard #Mansion: The White Room Cutscenes
+  multi:
+  - name: ard/jp/tt18.ard
+  - name: ard/us/tt18.ard
+  - name: ard/fr/tt18.ard
+  - name: ard/gr/tt18.ard
+  - name: ard/it/tt18.ard
+  - name: ard/sp/tt18.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt18evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt19.ard #Mansion: Basement Hall Cutscenes
+  multi:
+  - name: ard/jp/tt19.ard
+  - name: ard/us/tt19.ard
+  - name: ard/fr/tt19.ard
+  - name: ard/gr/tt19.ard
+  - name: ard/it/tt19.ard
+  - name: ard/sp/tt19.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt19evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt20.ard #Mansion: Basement Hall (Axel) Cutscenes
+  multi:
+  - name: ard/jp/tt20.ard
+  - name: ard/us/tt20.ard
+  - name: ard/fr/tt20.ard
+  - name: ard/gr/tt20.ard
+  - name: ard/it/tt20.ard
+  - name: ard/sp/tt20.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt20evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt21.ard #Mansion: Computer Room Cutscenes
+  multi:
+  - name: ard/jp/tt21.ard
+  - name: ard/us/tt21.ard
+  - name: ard/fr/tt21.ard
+  - name: ard/gr/tt21.ard
+  - name: ard/it/tt21.ard
+  - name: ard/sp/tt21.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt21evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt22.ard #Mansion: Basement Corridor Cutscenes
+  multi:
+  - name: ard/jp/tt22.ard
+  - name: ard/us/tt22.ard
+  - name: ard/fr/tt22.ard
+  - name: ard/gr/tt22.ard
+  - name: ard/it/tt22.ard
+  - name: ard/sp/tt22.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt22evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt23.ard #Mansion: Pod Room Cutscenes
+  multi:
+  - name: ard/jp/tt23.ard
+  - name: ard/us/tt23.ard
+  - name: ard/fr/tt23.ard
+  - name: ard/gr/tt23.ard
+  - name: ard/it/tt23.ard
+  - name: ard/sp/tt23.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/tt23map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt23evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt25.ard #The Tower Cutscenes
+  multi:
+  - name: ard/jp/tt25.ard
+  - name: ard/us/tt25.ard
+  - name: ard/fr/tt25.ard
+  - name: ard/gr/tt25.ard
+  - name: ard/it/tt25.ard
+  - name: ard/sp/tt25.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt25evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt27.ard #Tower: Sorcerer's Loft Cutscenes
+  multi:
+  - name: ard/jp/tt27.ard
+  - name: ard/us/tt27.ard
+  - name: ard/fr/tt27.ard
+  - name: ard/gr/tt27.ard
+  - name: ard/it/tt27.ard
+  - name: ard/sp/tt27.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt27evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt28.ard #Tower: Wardrobe Cutscenes
+  multi:
+  - name: ard/jp/tt28.ard
+  - name: ard/us/tt28.ard
+  - name: ard/fr/tt28.ard
+  - name: ard/gr/tt28.ard
+  - name: ard/it/tt28.ard
+  - name: ard/sp/tt28.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt28evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt29.ard #Tower: Star Chamber Cutscenes
+  multi:
+  - name: ard/jp/tt29.ard
+  - name: ard/us/tt29.ard
+  - name: ard/fr/tt29.ard
+  - name: ard/gr/tt29.ard
+  - name: ard/it/tt29.ard
+  - name: ard/sp/tt29.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt29evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt30.ard #Tower: Moon Chamber Cutscenes
+  multi:
+  - name: ard/jp/tt30.ard
+  - name: ard/us/tt30.ard
+  - name: ard/fr/tt30.ard
+  - name: ard/gr/tt30.ard
+  - name: ard/it/tt30.ard
+  - name: ard/sp/tt30.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt30evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt32.ard #Station of Serenity Cutscenes
+  multi:
+  - name: ard/jp/tt32.ard
+  - name: ard/us/tt32.ard
+  - name: ard/fr/tt32.ard
+  - name: ard/gr/tt32.ard
+  - name: ard/it/tt32.ard
+  - name: ard/sp/tt32.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt32evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt33.ard #Station of Calling Paths
+  multi:
+  - name: ard/jp/tt33.ard
+  - name: ard/us/tt33.ard
+  - name: ard/fr/tt33.ard
+  - name: ard/gr/tt33.ard
+  - name: ard/it/tt33.ard
+  - name: ard/sp/tt33.ard
+  source:
+  - method: areadatascript
+    name: btl
+    source:
+    - name: ard/tt33btl.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt34.ard #Station of Awakening Cutscenes
+  multi:
+  - name: ard/jp/tt34.ard
+  - name: ard/us/tt34.ard
+  - name: ard/fr/tt34.ard
+  - name: ard/gr/tt34.ard
+  - name: ard/it/tt34.ard
+  - name: ard/sp/tt34.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt34evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt40.ard #Betwixt and Between
+  multi:
+  - name: ard/jp/tt40.ard
+  - name: ard/us/tt40.ard
+  - name: ard/fr/tt40.ard
+  - name: ard/gr/tt40.ard
+  - name: ard/it/tt40.ard
+  - name: ard/sp/tt40.ard
+  source:
+  - method: areadatascript
+    name: map
+    source:
+    - name: ard/tt40map.yml
+    type: AreaDataScript
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt40evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/tt41.ard #The Old Mansion (Forced Fight) Cutscenes
+  multi:
+  - name: ard/jp/tt41.ard
+  - name: ard/us/tt41.ard
+  - name: ard/fr/tt41.ard
+  - name: ard/gr/tt41.ard
+  - name: ard/it/tt41.ard
+  - name: ard/sp/tt41.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/tt41evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi00.ard #Cornerstone Hill Cutscenes
+  multi:
+  - name: ard/jp/wi00.ard
+  - name: ard/us/wi00.ard
+  - name: ard/fr/wi00.ard
+  - name: ard/gr/wi00.ard
+  - name: ard/it/wi00.ard
+  - name: ard/sp/wi00.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi00evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi01.ard #Pier Cutscenes
+  multi:
+  - name: ard/jp/wi01.ard
+  - name: ard/us/wi01.ard
+  - name: ard/fr/wi01.ard
+  - name: ard/gr/wi01.ard
+  - name: ard/it/wi01.ard
+  - name: ard/sp/wi01.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi01evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi02.ard #Waterway Cutscenes
+  multi:
+  - name: ard/jp/wi02.ard
+  - name: ard/us/wi02.ard
+  - name: ard/fr/wi02.ard
+  - name: ard/gr/wi02.ard
+  - name: ard/it/wi02.ard
+  - name: ard/sp/wi02.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi02evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi03.ard #Wharf Cutscenes
+  multi:
+  - name: ard/jp/wi03.ard
+  - name: ard/us/wi03.ard
+  - name: ard/fr/wi03.ard
+  - name: ard/gr/wi03.ard
+  - name: ard/it/wi03.ard
+  - name: ard/sp/wi03.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi03evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi04.ard #Lilliput Cutscenes
+  multi:
+  - name: ard/jp/wi04.ard
+  - name: ard/us/wi04.ard
+  - name: ard/fr/wi04.ard
+  - name: ard/gr/wi04.ard
+  - name: ard/it/wi04.ard
+  - name: ard/sp/wi04.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi04evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi05.ard #Building Site Cutscenes
+  multi:
+  - name: ard/jp/wi05.ard
+  - name: ard/us/wi05.ard
+  - name: ard/fr/wi05.ard
+  - name: ard/gr/wi05.ard
+  - name: ard/it/wi05.ard
+  - name: ard/sp/wi05.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi05evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi06.ard #Scene of the Fire Cutscenes
+  multi:
+  - name: ard/jp/wi06.ard
+  - name: ard/us/wi06.ard
+  - name: ard/fr/wi06.ard
+  - name: ard/gr/wi06.ard
+  - name: ard/it/wi06.ard
+  - name: ard/sp/wi06.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi06evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi07.ard #Mickey's House Cutscenes
+  multi:
+  - name: ard/jp/wi07.ard
+  - name: ard/us/wi07.ard
+  - name: ard/fr/wi07.ard
+  - name: ard/gr/wi07.ard
+  - name: ard/it/wi07.ard
+  - name: ard/sp/wi07.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi07evt.yml
+    type: AreaDataScript
+- method: binarc
+  name: ard/wi08.ard #Villain's Vale Cutscenes
+  multi:
+  - name: ard/jp/wi08.ard
+  - name: ard/us/wi08.ard
+  - name: ard/fr/wi08.ard
+  - name: ard/gr/wi08.ard
+  - name: ard/it/wi08.ard
+  - name: ard/sp/wi08.ard
+  source:
+  - method: areadatascript
+    name: evt
+    source:
+    - name: ard/wi08evt.yml
+    type: AreaDataScript

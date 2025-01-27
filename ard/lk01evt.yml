@@ -1,0 +1,12 @@
+Program 0x0A
+Party W_FRIEND_FIX
+AreaSettings 9 -1
+ SetProgressFlag 0x281D
+ SetJump Type 1 World LK Area 1 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "b51e"
+
+Program 0x11
+Party W_FRIEND
+Spawn "b53_"

@@ -1,0 +1,43 @@
+Program 0x75
+Bgm Default Default
+AreaSettings 0 -1
+ SetProgressFlag 0x893
+ SetMember 1
+ SetUnk05 0x1
+ SetJump Type 1 World TT Area 14 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 1
+
+
+Program 0x77
+Party DEFAULT
+AreaSettings 0 -1
+ SetProgressFlag 0x8BA
+ SetJump Type 1 World TT Area 9 Entrance 52 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+
+Program 0x04
+Party DEFAULT
+Unk1d 4
+AreaSettings 9 -1
+ SetProgressFlag 0x8A1
+ SetUnk05 0x2
+ SetJump Type 1 World TT Area 25 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "a71_"
+Spawn "b71_"
+Spawn "c71_"
+Spawn "971_"
+
+
+Program 0x76
+Party DEFAULT
+Bgm 114 114
+AreaSettings 0 -1
+ SetProgressFlag 0x89D
+ SetEvent "708" Type 2
+ SetJump Type 1 World TT Area 9 Entrance 51 LocalSet 0 FadeType 1
+ SetInventory 290 291 526
+ SetPartyMenu 0

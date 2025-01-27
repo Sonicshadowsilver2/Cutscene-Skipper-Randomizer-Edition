@@ -1,0 +1,15 @@
+Program 0x02
+MapVisibility 0x0005555d 0x00000000
+AreaSettings 1 569
+ SetProgressFlag 0x3812
+ SetJump Type 2 World NM Area 0 Entrance 0 LocalSet 52 FadeType 1
+ SetPartyMenu 0
+
+Spawn "m_00"
+Spawn "m_10"
+Spawn "m_11"
+Spawn "m_12"
+Spawn "m_50"
+Spawn "m_70"
+Spawn "m_81"
+Spawn "m_82"

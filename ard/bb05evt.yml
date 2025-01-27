@@ -1,0 +1,20 @@
+Program 0x4E
+Bgm 131 131
+AreaSettings 16 -1
+ SetProgressFlag 0x1405
+ SetJump Type 2 World BB Area 0 Entrance 0 LocalSet 79 FadeType 2
+ SetPartyMenu 0
+
+Spawn "e_01"
+
+Program 0x4F
+Bgm 121 121
+AreaSettings 16 -1
+ SetProgressFlag 0x1415
+ SetUnk05 0x02
+ SetEvent "123" Type 18
+ SetJump Type 1 World HB Area 26 Entrance 23 LocalSet 0 FadeType 1
+ SetInventory 299
+ SetPartyMenu 0
+
+Spawn "e_02"

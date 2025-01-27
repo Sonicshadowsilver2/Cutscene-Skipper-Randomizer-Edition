@@ -1,0 +1,11 @@
+Program 0x14
+AreaSettings 1 36
+ SetProgressFlag 0x3415
+ SetJump Type 2 World WI Area 0 Entrance 0 LocalSet 52 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_52"
+Spawn "c01_"
+Spawn "d04_"
+Spawn "e03_"
+Spawn "z00s"

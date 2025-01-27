@@ -1,0 +1,12 @@
+Program 0x16
+AreaSettings 1 28
+ SetProgressFlag 0x1029
+ SetUnk05 0x1
+ SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 66 FadeType 1
+ SetPartyMenu 0
+
+Unk1d 4
+Spawn "e_02"
+Spawn "e_50"
+Spawn "y02_"
+Spawn "n01_"

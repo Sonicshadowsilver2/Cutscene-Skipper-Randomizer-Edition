@@ -1,0 +1,15 @@
+Program 0x00
+MapVisibility 0x00000003 0x00000000
+AreaSettings 1 33
+ SetProgressFlag 0x203A
+ SetMember 0
+ SetUnk05 0x1
+ SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 73 FadeType 1
+ SetPartyMenu 1
+
+Spawn "m_00"
+Spawn "m_11"
+Spawn "m_12"
+Spawn "m_22"
+Spawn "m_60"
+Spawn "m_70"

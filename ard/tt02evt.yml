@@ -1,0 +1,21 @@
+Program 0x02
+AreaSettings 37 -1
+ SetJump Type 1 World TT Area 2 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+AreaSettings 38 -1
+ SetProgressFlag 0x833
+ SetEvent "204" Type 1
+ SetJump Type 1 World TT Area 3 Entrance 50 LocalSet 0 FadeType 1
+ SetInventory 319
+ SetPartyMenu 0
+
+AreaSettings 15 -1
+ SetProgressFlag 0x833
+ SetUnk05 0x3
+ SetEvent "204" Type 9
+ SetJump Type 1 World TT Area 3 Entrance 50 LocalSet 0 FadeType 1
+ SetInventory 319
+ SetPartyMenu 0
+
+Spawn "e_50"

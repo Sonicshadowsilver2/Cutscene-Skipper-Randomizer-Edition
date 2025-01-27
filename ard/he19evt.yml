@@ -1,0 +1,6 @@
+Program 0xC9
+Bgm 145 145
+AreaSettings 15 -1
+ SetProgressFlag 0x183D
+ SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 202 FadeType 1
+ SetPartyMenu 0

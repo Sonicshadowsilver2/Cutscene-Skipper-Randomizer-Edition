@@ -1,0 +1,44 @@
+Program 0x01
+Party DEFAULT
+AreaSettings 0 -1
+ SetProgressFlag 0x4814
+ SetEvent "115" Type 2
+ SetJump Type 1 World EH Area 11 Entrance 50 LocalSet 0 FadeType 1
+ SetInventory 278 496
+ SetPartyMenu 0
+
+
+Program 0x02
+Party W_FRIEND
+AreaSettings 9 -1
+ SetProgressFlag 0x4822
+ SetUnk05 0x1
+ SetJump Type 2 World EH Area 19 Entrance 0 LocalSet 59 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_01"
+Spawn "e_50"
+Spawn "f00_"
+
+Program 0x04
+Party W_FRIEND
+MapScript 19
+AreaSettings 9 -1
+ SetProgressFlag 0x4826
+ SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 75 FadeType 1
+ SetPartyMenu 0
+
+AreaSettings 0 -1
+ SetProgressFlag 0x4847
+ SetPartyMenu 0
+
+AreaSettings 33 -1
+ SetProgressFlag 0x4846
+ SetPartyMenu 0
+
+Unk1d 4
+Spawn "e_50"
+Spawn "a01_"
+Spawn "b06_"
+Spawn "c00_"
+Spawn "e06_"

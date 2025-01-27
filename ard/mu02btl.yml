@@ -1,0 +1,8 @@
+Program 0x01
+Capacity 42
+Spawn "b_00"
+
+AreaSettings 1 16
+ SetProgressFlag 0x2034
+ SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 71 FadeType 1
+ SetPartyMenu 0

@@ -1,0 +1,6 @@
+Program 0x01
+Party DEFAULT
+AreaSettings 0 -1
+ SetProgressFlag 0x480D
+ SetJump Type 1 World EH Area 6 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0

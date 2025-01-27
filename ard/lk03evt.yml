@@ -1,0 +1,6 @@
+Program 0x03
+Party DEFAULT
+AreaSettings 1 30
+ SetProgressFlag 0x280C
+ SetJump Type 1 World LK Area 7 Entrance 0 LocalSet 0 FadeType 1
+ SetPartyMenu 0

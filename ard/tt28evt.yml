@@ -1,0 +1,18 @@
+Program 0x01
+Party DEFAULT
+AreaSettings 0 -1
+ SetProgressFlag 0x8A9
+ SetJump Type 1 World TT Area 28 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+
+Program 0x03
+Party DEFAULT
+MapScript 8
+AreaSettings 1 -1
+ SetProgressFlag 0x8DE
+ SetJump Type 1 World TT Area 28 Entrance 52 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "e_50"
+Spawn "180_"

@@ -1,0 +1,21 @@
+Program 0x16
+AreaSettings 1 45
+ SetProgressFlag 0x481B
+ SetJump Type 1 World EH Area 13 Entrance 52 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Unk1d 4
+Spawn "e_50"
+Spawn "b04_"
+Spawn "d04_"
+Spawn "e05_"
+
+Program 0x38
+Bgm 185 185
+AreaSettings 16 -1
+ SetProgressFlag 0x481A
+ SetUnk05 0x3
+ SetEvent "122a" Type 3
+ SetJump Type 1 World EH Area 15 Entrance 50 LocalSet 0 FadeType 1
+ SetInventory 536
+ SetPartyMenu 0

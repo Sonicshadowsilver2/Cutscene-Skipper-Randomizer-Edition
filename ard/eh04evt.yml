@@ -1,0 +1,26 @@
+Program 0x16
+AreaSettings 0 -1
+ SetProgressFlag 0x4847
+ SetPartyMenu 0
+
+AreaSettings 1 66
+ SetProgressFlag 0x480D
+ SetJump Type 1 World EH Area 6 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+AreaSettings 33 -1
+ SetProgressFlag 0x4846
+ SetPartyMenu 0
+
+Unk1d 4
+Spawn "e_50"
+Spawn "a00_"
+Spawn "e01_"
+Spawn "z00s"
+
+Program 0x01
+Party DEFAULT
+AreaSettings 0 -1
+ SetProgressFlag 0x480C
+ SetJump Type 1 World EH Area 4 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
