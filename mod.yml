@@ -1,5 +1,5 @@
 title: Cutscene Skipper Randomizer Edition
-description: Removes and skips all cutscenes in KH2FM Randomizer!
+description: Removes and skips all cutscenes in KH2FM Randomizer. Place above GoA ROM Edition, but below everything else!
 assets:
 #Lua Script
 - name: scripts/Cutscene Skipper.lua
