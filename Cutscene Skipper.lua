@@ -94,10 +94,9 @@ function _OnFrame()
         if ReadShort(CutLen) == 0x01E3 then --GoA Computer Cutscene
             WriteByte(CutSkp, 0x01)
         end
-        if ReadShort(Now+0x30) == 0x0F0A and ReadByte(Save+0x1DD6) == 0x03 then --Post Groundshaker Cutscene
-            WriteByte(Save+0xF5E, 0x0D)
-            BitOr(Save+0x1DD6, 0x04)
-            WriteByte(Save+0x1DDE, 0x03)
+        if ReadByte(Save+0x1D94) == 0x79 or ReadByte(Save+0x1D94) == 0x7B then --Post Storm Rider Cutscene
+            BitOr(Save+0x1D94, 0x04)
+            WriteShort(Save+0x1D9E, 0x0802)
         end
         if ReadByte(Save+0x1DB1) == 0x0F and ReadByte(Save+0x1DB7) == 0x7F then --Post A Blustery Rescue
             WriteByte(Save+0xDAC, 0x14)
@@ -238,6 +237,9 @@ function _OnFrame()
         WriteByte(CutSkp, 0x01)
         BitOr(Save+0x1D96, 0x20)
 	end
+    if ReadShort(Now+0x00) == 0x0608 and ReadShort(Save+0x3555) == 0x1212 then --Pre-Summit Heartless Cutscene
+        WriteByte(Now+0x01, 0x07)
+    end
     if ReadShort(Now+0x00) == 0x0808 and ReadShort(CutLen) == 0x08AC then --Pre-Imperial Square Heartless 1 Cutscene
         WriteByte(CutSkp, 0x01)
     end
@@ -262,6 +264,8 @@ function _OnFrame()
         BitOr(Save+0x1D98, 0x08)
 	end
     if ReadInt(Now+0x00) == 0x00320A08 and ReadByte(Save+0x1D98) == 0x5F then --Pre-Antechamber Nobodies Cutscene
+        WriteByte(Save+0xC42, 0x0A)
+        WriteInt(Save+0xC48, 0x0000000A)
         BitOr(Save+0x1D98, 0x20)
     end
     if ReadInt(Now+0x00) == 0x00320B08 and ReadByte(Save+0x1D93) == 0x0B then --Post Antechamber Nobodies Cutscene
@@ -278,10 +282,6 @@ function _OnFrame()
         WriteByte(Save+0xC50, 0x00)
         BitOr(Save+0x1D94, 0x01)
         WriteShort(Save+0x1FAC, 0x0000)
-    end
-    if ReadShort(Now+0x00) == 0x1A04 and ReadByte(Save+0x1D94) == 0x7B then --Post Storm Rider Cutscene
-        BitOr(Save+0x1D94, 0x04)
-        WriteShort(Save+0x1D9E, 0x0802)
     end
     if ReadShort(Now+0x00) == 0x0A12 and ReadShort(CutLen) == 0x00DC then --Post Data Xigbar Cutscene
         if ReadShort(CutNow) >= 0x0002 then
@@ -813,6 +813,11 @@ function _OnFrame()
     end
     if ReadShort(Now+0x00) == 0x000A and ReadShort(Save+0x355E) == 0x1212 then --Pre-Groundshaker Cutscene
         WriteByte(Now+0x01, 0x0F)
+    end
+    if ReadShort(Now+0x00) == 0x1A04 and ReadByte(Save+0x1DD6) == 0x03 then --Post Groundshaker Cutscene
+        WriteByte(Save+0xF5E, 0x0D)
+        BitOr(Save+0x1DD6, 0x04)
+        WriteByte(Save+0x1DDE, 0x03)
     end
     if ReadShort(Now+0x00) == 0x0F12 and ReadShort(CutLen) == 0x00DC then --Post Data Saix Cutscene
         if ReadShort(CutNow) >= 0x0002 then
