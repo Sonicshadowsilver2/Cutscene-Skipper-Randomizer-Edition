@@ -94,10 +94,6 @@ function _OnFrame()
         if ReadShort(CutLen) == 0x01E3 then --GoA Computer Cutscene
             WriteByte(CutSkp, 0x01)
         end
-        if ReadByte(Save+0x1D94) == 0x79 or ReadByte(Save+0x1D94) == 0x7B then --Post Storm Rider Cutscene
-            BitOr(Save+0x1D94, 0x04)
-            WriteShort(Save+0x1D9E, 0x0802)
-        end
         if ReadByte(Save+0x1DB1) == 0x0F and ReadByte(Save+0x1DB7) == 0x7F then --Post A Blustery Rescue
             WriteByte(Save+0xDAC, 0x14)
             BitOr(Save+0x1DB1, 0xC0)
@@ -282,6 +278,10 @@ function _OnFrame()
         WriteByte(Save+0xC50, 0x00)
         BitOr(Save+0x1D94, 0x01)
         WriteShort(Save+0x1FAC, 0x0000)
+    end
+    if ReadByte(Save+0x1D94) == 0x79 or ReadByte(Save+0x1D94) == 0x7B then --Post Storm Rider Cutscene
+        BitOr(Save+0x1D94, 0x04)
+        WriteShort(Save+0x1D9E, 0x0802)
     end
     if ReadShort(Now+0x00) == 0x0A12 and ReadShort(CutLen) == 0x00DC then --Post Data Xigbar Cutscene
         if ReadShort(CutNow) >= 0x0002 then
