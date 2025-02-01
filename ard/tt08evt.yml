@@ -1,13 +1,3 @@
-Program 0xD1
-Party NO_FRIEND
-AreaSettings 0 -1
- SetProgressFlag 0x841
- SetUnk05 0x2
- SetEvent "207c" Type 130
- SetJump Type 1 World TT Area 2 Entrance 50 LocalSet 0 FadeType 1
- SetInventory 288
- SetPartyMenu 0
-
 Program 0x0F
 AreaSettings 1 38
  SetProgressFlag 0x86D
@@ -29,10 +19,23 @@ AreaSettings 0 -1
  SetPartyMenu 0
 
 
+Program 0x6F
+Party NO_FRIEND
+MapScript 21
+AreaSettings 0 -1
+ SetProgressFlag 0x841
+ SetUnk05 0x2
+ SetEvent "207c" Type 130
+ SetJump Type 1 World TT Area 2 Entrance 50 LocalSet 0 FadeType 1
+ SetInventory 288
+ SetPartyMenu 0
+
+
 Program 0x6C
 Bgm 114 114
 AreaSettings 15 -1
  SetProgressFlag 0x89B
  SetUnk05 0x3
+ SetEvent "707" Type 9
  SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 118 FadeType 1
  SetPartyMenu 0

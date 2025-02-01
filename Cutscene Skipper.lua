@@ -847,7 +847,10 @@ function _OnFrame()
     if ReadShort(Now+0x00) == 0x0802 and ReadShort(CutLen) == 0x040E then --Pre-Station Plaza Nobodies Cutscene
         WriteByte(CutSkp, 0x01)
     end
-    if ReadShort(Now+0x00) == 0x0902 and ReadShort(CutLen) == 0x035C then --Post Station Plaza Nobodies Cutscene
+    if ReadShort(Now+0x00) == 0x0802 and ReadShort(CutLen) == 0x0E93 then --Post Station Plaza Nobodies Cutscene 1
+        WriteByte(CutSkp, 0x01)
+    end
+    if ReadShort(Now+0x00) == 0x0902 and ReadShort(CutLen) == 0x035C then --Post Station Plaza Nobodies Cutscene 2
         if ReadShort(CutNow) >= 0x0002 then
             WriteByte(CutSkp, 0x01)
             WriteByte(Save+0x326, 0x00)
@@ -1538,6 +1541,7 @@ function _OnFrame()
         BitOr(Save+0x1CE0, 0x20)
     end
     if ReadShort(Now+0x00) == 0x1502 and ReadByte(Save+0x1CE1) == 0x01 then --Entering Computer Room Cutscene
+        WriteByte(Now+0x04, 0x02)
         WriteByte(Save+0x382, 0x03)
         WriteByte(Save+0x386, 0x01)
         WriteByte(Save+0x38E, 0x02)

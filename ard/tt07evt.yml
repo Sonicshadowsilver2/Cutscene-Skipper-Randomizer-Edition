@@ -49,7 +49,7 @@ Program 0x0D
 Party NO_FRIEND
 Layout "file/%s/tt_pt.2ld"
 AreaSettings 0 -1
- SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 209 FadeType 1
+ SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 111 FadeType 1
  SetPartyMenu 0
 
 Spawn "e_50"
