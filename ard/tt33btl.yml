@@ -146,3 +146,17 @@ AreaSettings 1 70
  SetPartyMenu 1
 
 Spawn "b_14"
+
+Program 0x0B
+Unk06 0
+BattleLevel 99
+Unk1d 4
+AreaSettings 1 46
+ SetJump Type 1 World HB Area 26 Entrance 50 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+AreaSettings 1 70
+ SetJump Type 1 World TT Area 33 Entrance 0 LocalSet 0 FadeType 1
+ SetPartyMenu 0
+
+Spawn "b_14"

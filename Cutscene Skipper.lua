@@ -200,8 +200,23 @@ function _OnFrame()
         BitOr(Save+0x1ED4, 0x80)
         WriteByte(Save+0x1B8C, 0x00)
 	end
-    if ReadShort(Now+0x00) == 0x2102 and ReadByte(Save+0x1ED4) > 0x7F then --Entering Final Battles Cutscene (Promise Charm)
-        WriteShort(Now+0x00, 0x1B12)
+    if ReadShort(Now+0x00) == 0x2102 then --Station of Calling
+        if ReadByte(Now+0x06) == 0x0A then --Promise Charm Route A
+            if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --Proofs
+                if ReadByte(Save+0x1ED4) > 0x7F then
+                    WriteShort(Now+0x00, 0x1B12)
+                end
+            else
+                WriteByte(Now+0x06, 0x0B)
+                WriteByte(Save+0x3D8, 0x0B)
+            end
+        end
+        if ReadByte(Now+0x06) == 0x0B then --Promise Charm Route B
+            if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --Proofs
+                WriteByte(Now+0x06, 0x0A)
+                WriteByte(Save+0x3D8, 0x0A)
+            end
+        end
 	end
     if ReadShort(Now+0x00) == 0x1712 and ReadByte(Now+0x08) == 0x49 then --Armor Xemnas II Auto-Revert/Refill
         if ReadShort(Now+0x30) == 0x1812 and ReadByte(Now+0x38) == 0x47 then
