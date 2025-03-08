@@ -954,6 +954,9 @@ function _OnFrame()
     if ReadShort(Now+0x00) == 0x0E02 and ReadShort(CutLen) == 0x100B then --Pre-The Old Mansion Nobodies Cutscene
         WriteByte(CutSkp, 0x01)
     end
+    if ReadInt(Now+0x00) == 0x00340E02 and ReadByte(Save+0x1D0D) == 0x0C then --Post The Old Mansion Nobodies Cutscene
+        WriteByte(Save+0x1D0D, 0x0D)
+    end
     if ReadShort(Now+0x00) == 0x1502 and ReadShort(CutLen) == 0x010E then --Entering Roxas's Twilight Town Cutscene
         WriteByte(CutSkp, 0x01)
         WriteByte(Save+0x38E, 0x04)
@@ -1333,6 +1336,9 @@ function _OnFrame()
         WriteByte(CutSkp, 0x01)
     end
     if ReadShort(Now+0x00) == 0x080D and ReadShort(CutLen) == 0x0807 then --Before Waterway Pete Cutscene
+        WriteByte(CutSkp, 0x01)
+    end
+    if ReadShort(Now+0x00) == 0x020D and ReadShort(CutLen) == 0x0239 then --Pre-Waterway Pete Cutscene
         WriteByte(CutSkp, 0x01)
     end
     if ReadShort(Now+0x00) == 0x030D and ReadShort(CutLen) == 0x094F then --Post Wharf Pete Cutscene
