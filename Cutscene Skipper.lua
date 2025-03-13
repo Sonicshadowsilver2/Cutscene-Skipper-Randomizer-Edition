@@ -200,23 +200,8 @@ function _OnFrame()
         BitOr(Save+0x1ED4, 0x80)
         WriteByte(Save+0x1B8C, 0x00)
 	end
-    if ReadShort(Now+0x00) == 0x2102 then --Station of Calling
-        if ReadByte(Now+0x06) == 0x0A then --Promise Charm Route A
-            if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --Proofs
-                if ReadByte(Save+0x1ED4) > 0x7F then
-                    WriteShort(Now+0x00, 0x1B12)
-                end
-            else
-                WriteByte(Now+0x06, 0x0B)
-                WriteByte(Save+0x3D8, 0x0B)
-            end
-        end
-        if ReadByte(Now+0x06) == 0x0B then --Promise Charm Route B
-            if ReadByte(Save+0x36B2) > 0 and ReadByte(Save+0x36B3) > 0 and ReadByte(Save+0x36B4) > 0 then --Proofs
-                WriteByte(Now+0x06, 0x0A)
-                WriteByte(Save+0x3D8, 0x0A)
-            end
-        end
+    if ReadShort(Now+0x00) == 0x1B12 and ReadShort(CutLen+0x00) == 0x04B7 then
+		WriteByte(CutSkp+0x00, 0x01) --Pre-Final Battles Cutscene (Promise Charm)
 	end
     if ReadShort(Now+0x00) == 0x1712 and ReadByte(Now+0x08) == 0x49 then --Armor Xemnas II Auto-Revert/Refill
         if ReadShort(Now+0x30) == 0x1812 and ReadByte(Now+0x38) == 0x47 then
@@ -1411,7 +1396,7 @@ function _OnFrame()
         WriteInt(Save+0x210C, 0xC97DC97C)
         BitOr(Save+0x2398, 0x10)
     end
-    if ReadShort(Now+0x00) == 0x0211 and ReadByte(Save+0x3579) == 0x03 then --Post Game Grid Heartless
+    if ReadShort(Now+0x00) == 0x0211 and ReadByte(Save+0x1EB3) == 0x02 and ReadByte(Save+0x3579) == 0x03 then --Post Game Grid Heartless
         WriteByte(Now+0x01, 0x00)
         BitOr(Save+0x1EB3, 0x01)
     end
@@ -1508,7 +1493,10 @@ function _OnFrame()
     if ReadShort(Now+0x00) == 0x2202 and ReadShort(CutLen) == 0x047B then --Pre-Twilight Thorn Cutscene
 		WriteByte(CutSkp, 0x01)
 	end
-    if ReadInt(Now+0x00) == 0x00320502 and ReadByte(Save+0x1CD9) == 0x0F then --Post Twilight Thorn Cutscene
+    if ReadShort(Now+0x00) == 0x2202 and ReadShort(CutLen) == 0x01B2 then --Post Twilight Thorn Cutscene 1
+		WriteByte(CutSkp, 0x01)
+	end
+    if ReadInt(Now+0x00) == 0x00320502 and ReadByte(Save+0x1CD9) == 0x0F then --Post Twilight Thorn Cutscene 2
         WriteByte(Save+0x322, 0x02)
         WriteByte(Save+0x334, 0x02)
         WriteInt(Save+0x338, 0x00020014)
