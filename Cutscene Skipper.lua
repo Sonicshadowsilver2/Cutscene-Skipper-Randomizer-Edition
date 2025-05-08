@@ -375,6 +375,7 @@ function _OnFrame()
             WriteByte(CutSkp, 0x01)
             BitOr(Save+0x1D31, 0x04)
             WriteByte(Save+0x1D3E, 0x01)
+            WriteShort(Save+0x1FCC, 0x0000)
         end
 	end
     if ReadShort(Now+0x00) == 0x0F05 and ReadShort(CutLen) == 0x00DC then --Post Data Xaldin Cutscene
