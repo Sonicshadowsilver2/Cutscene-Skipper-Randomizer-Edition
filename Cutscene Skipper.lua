@@ -205,18 +205,58 @@ function _OnFrame()
 	end
     if ReadShort(Now+0x00) == 0x1712 and ReadByte(Now+0x08) == 0x49 then --Armor Xemnas II Auto-Revert/Refill
         if ReadShort(Now+0x30) == 0x1812 and ReadByte(Now+0x38) == 0x47 then
-            WriteInt(Save+0x2524,ReadInt(Save+0x2534)) --Auto-Reload Item Slots 1 & 2
-            WriteInt(Save+0x2528,ReadInt(Save+0x2538)) --Auto-Reload Item Slots 3 & 4
-            WriteInt(Save+0x252C,ReadInt(Save+0x253C)) --Auto-Reload Item Slots 5 & 6
-            WriteInt(Save+0x2530,ReadInt(Save+0x2540)) --Auto-Reload Item Slots 7 & 8
+            if ReadShort(Save+0x2524) ~= 0 then --Item Slot 1 (Auto-Reload)
+                WriteShort(Save+0x2524,ReadShort(Save+0x2534)) --Auto-Reload Item Slot 1
+            end
+            if ReadShort(Save+0x2526) ~= 0 then --Item Slot 2 (Auto-Reload)
+                WriteShort(Save+0x2526,ReadShort(Save+0x2536)) --Auto-Reload Item Slot 2
+            end
+            if ReadShort(Save+0x2528) ~= 0 then --Item Slot 3 (Auto-Reload)
+                WriteShort(Save+0x2528,ReadShort(Save+0x2538)) --Auto-Reload Item Slot 3
+            end
+            if ReadShort(Save+0x252A) ~= 0 then --Item Slot 4 (Auto-Reload)
+                WriteShort(Save+0x252A,ReadShort(Save+0x253A)) --Auto-Reload Item Slot 4
+            end
+            if ReadShort(Save+0x252C) ~= 0 then --Item Slot 5 (Auto-Reload)
+                WriteShort(Save+0x252C,ReadShort(Save+0x253C)) --Auto-Reload Item Slot 5
+            end
+            if ReadShort(Save+0x252E) ~= 0 then --Item Slot 6 (Auto-Reload)
+                WriteShort(Save+0x252E,ReadShort(Save+0x253E)) --Auto-Reload Item Slot 6
+            end
+            if ReadShort(Save+0x2530) ~= 0 then --Item Slot 7 (Auto-Reload)
+                WriteShort(Save+0x2530,ReadShort(Save+0x2540)) --Auto-Reload Item Slot 7
+            end
+            if ReadShort(Save+0x2532) ~= 0 then --Item Slot 8 (Auto-Reload)
+                WriteShort(Save+0x2532,ReadShort(Save+0x2542)) --Auto-Reload Item Slot 8
+            end
         end
     end
     if ReadShort(Now+0x00) == 0x1412 and ReadByte(Now+0x08) == 0x4A then --Final Xemnas Auto-Refill
         if ReadShort(Now+0x30) == 0x1712 and ReadByte(Now+0x38) == 0x49 then
-            WriteInt(Save+0x2524,ReadInt(Save+0x2534)) --Auto-Reload Item Slots 1 & 2
-            WriteInt(Save+0x2528,ReadInt(Save+0x2538)) --Auto-Reload Item Slots 3 & 4
-            WriteInt(Save+0x252C,ReadInt(Save+0x253C)) --Auto-Reload Item Slots 5 & 6
-            WriteInt(Save+0x2530,ReadInt(Save+0x2540)) --Auto-Reload Item Slots 7 & 8
+            if ReadShort(Save+0x2524) ~= 0 then --Item Slot 1 (Auto-Reload)
+                WriteShort(Save+0x2524,ReadShort(Save+0x2534)) --Auto-Reload Item Slot 1
+            end
+            if ReadShort(Save+0x2526) ~= 0 then --Item Slot 2 (Auto-Reload)
+                WriteShort(Save+0x2526,ReadShort(Save+0x2536)) --Auto-Reload Item Slot 2
+            end
+            if ReadShort(Save+0x2528) ~= 0 then --Item Slot 3 (Auto-Reload)
+                WriteShort(Save+0x2528,ReadShort(Save+0x2538)) --Auto-Reload Item Slot 3
+            end
+            if ReadShort(Save+0x252A) ~= 0 then --Item Slot 4 (Auto-Reload)
+                WriteShort(Save+0x252A,ReadShort(Save+0x253A)) --Auto-Reload Item Slot 4
+            end
+            if ReadShort(Save+0x252C) ~= 0 then --Item Slot 5 (Auto-Reload)
+                WriteShort(Save+0x252C,ReadShort(Save+0x253C)) --Auto-Reload Item Slot 5
+            end
+            if ReadShort(Save+0x252E) ~= 0 then --Item Slot 6 (Auto-Reload)
+                WriteShort(Save+0x252E,ReadShort(Save+0x253E)) --Auto-Reload Item Slot 6
+            end
+            if ReadShort(Save+0x2530) ~= 0 then --Item Slot 7 (Auto-Reload)
+                WriteShort(Save+0x2530,ReadShort(Save+0x2540)) --Auto-Reload Item Slot 7
+            end
+            if ReadShort(Save+0x2532) ~= 0 then --Item Slot 8 (Auto-Reload)
+                WriteShort(Save+0x2532,ReadShort(Save+0x2542)) --Auto-Reload Item Slot 8
+            end
         end
     end
     if ReadShort(Now+0x00) == 0x1412 and ReadShort(CutLen) == 0x00DC then --Post Data Final Xemnas Cutscene
