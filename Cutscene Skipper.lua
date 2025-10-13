@@ -349,6 +349,9 @@ function _OnFrame()
         BitOr(Save+0x1D31, 0x20)
         WriteByte(Save+0x1D3F, 0x01)
     end
+    if ReadShort(Now+0x00) == 0x0005 and ReadShort(CutLen) == 0x02A6 then --2nd Entrance Hall Cutscene
+        WriteByte(CutSkp, 0x01)
+    end
     if ReadShort(Now+0x00) == 0x0B05 and ReadShort(CutLen) == 0x0492 then --Pre-Thresholder Cutscene
         WriteByte(CutSkp, 0x01)
 	end
