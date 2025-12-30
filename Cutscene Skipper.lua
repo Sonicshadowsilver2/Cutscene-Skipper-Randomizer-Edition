@@ -341,13 +341,17 @@ function _OnFrame()
             WriteByte(CutSkp, 0x01)
         end
 	end
-    if ReadShort(Now+0x00) == 0x0005 and ReadByte(Now+0x08) == 0x01 then --Beast's Castle 1 1st Cutscene
+    if ReadInt(Now+0x00) == 0x00630005 and ReadByte(Now+0x08) == 0x01 then --Beast's Castle 1 1st Cutscene
         WriteArray(Now+0x01, {0x01, 0x00, 0x00, 0x44, 0x00, 0x44, 0x00, 0x44})
         WriteByte(Save+0x0D, 0x01)
         WriteInt(Save+0x794, 0x00010000)
         BitOr(Save+0x1D30, 0x06)
         BitOr(Save+0x1D31, 0x20)
         WriteByte(Save+0x1D3F, 0x01)
+    end
+    if ReadShort(Now+0x00) == 0x0105 and ReadByte(Now+0x08) == 0x44 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x01, 0x00)
+        WriteByte(Now+0x08, 0x01)
     end
     if ReadShort(Now+0x00) == 0x0005 and ReadShort(CutLen) == 0x02A6 then --2nd Entrance Hall Cutscene
         WriteByte(CutSkp, 0x01)
@@ -426,7 +430,7 @@ function _OnFrame()
             WriteByte(CutSkp, 0x01)
         end
 	end
-    if ReadShort(Now+0x00) == 0x040E and ReadByte(Now+0x08) == 0x01 then --Halloween Town 1 1st Cutscene
+    if ReadInt(Now+0x00) == 0x0063040E and ReadByte(Now+0x08) == 0x01 then --Halloween Town 1 1st Cutscene
         WriteArray(Now+0x01, {0x02, 0x32, 0x00, 0x05, 0x00, 0x00, 0x00, 0x15})
         WriteShort(Save+0x0D, 0x3202)
         WriteByte(Save+0x1514, 0x01)
@@ -438,6 +442,13 @@ function _OnFrame()
         BitOr(Save+0x1E53, 0x10)
         BitOr(Save+0x1E57, 0x02)
         WriteInt(Save+0x2014, 0x858B858A)
+    end
+    if ReadInt(Now+0x00) == 0x0032020E and ReadByte(Now+0x08) == 0x15 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x01, 0x04)
+        WriteByte(Now+0x08, 0x01)
+    elseif ReadInt(Now+0x00) == 0x0032040E and ReadByte(Load) == 0x00 then
+        WriteByte(Now+0x01, 0x02)
+        WriteByte(Now+0x08, 0x15)
     end
     if ReadShort(Now+0x00) == 0x020E and ReadByte(Save+0x1E5F) == 0x00 and ReadByte(Save+0x356D) == 0x03 then --After Jack Reunion Cutscene
 		WriteByte(Now+0x01, 0x01)
@@ -544,13 +555,16 @@ function _OnFrame()
             end
         end
 	end
-    if ReadShort(Now+0x00) == 0x0007 and ReadByte(Now+0x08) == 0x01 then --Pre-Agrabah Heartless Cutscene
+    if ReadInt(Now+0x00) == 0x00630007 and ReadByte(Now+0x08) == 0x01 then --Pre-Agrabah Heartless Cutscene
         WriteArray(Now+0x02, {0x00, 0x00, 0x39, 0x00, 0x39, 0x00, 0x39})
         WriteByte(Save+0x0E, 0x00)
         WriteByte(Save+0xA94, 0x00)
         BitOr(Save+0x1D73, 0x08)
         BitOr(Save+0x1D74, 0x08)
         WriteByte(Save+0x1D7F, 0x01)
+    end
+    if ReadShort(Now+0x00) == 0x0007 and ReadByte(Now+0x08) == 0x39 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x08, 0x01)
     end
     if ReadShort(Now+0x00) == 0x0007 and ReadShort(CutLen) == 0x0333 then --Post Agrabah Heartless Cutscene
         WriteByte(CutSkp, 0x01)
@@ -644,7 +658,7 @@ function _OnFrame()
             end
         end
 	end
-    if ReadShort(Now+0x00) == 0x0006 and ReadByte(Now+0x08) == 0x01 then --Olympus Coliseum 1 1st Cutscene
+    if ReadInt(Now+0x00) == 0x00630006 and ReadByte(Now+0x08) == 0x01 then --Olympus Coliseum 1 1st Cutscene
         WriteArray(Now+0x01, {0x03, 0x32, 0x00, 0x01, 0x00, 0x16, 0x00, 0x02})
         WriteByte(Save+0x0D, 0x3203)
         WriteByte(Save+0x914, 0x00)
@@ -655,6 +669,13 @@ function _OnFrame()
         WriteByte(Save+0x1D6F, 0x01)
         WriteArray(Save+0x1F04, {0x98, 0x82, 0x99, 0x82, 0x9A, 0x82, 0x9B, 0x82})
         WriteInt(Save+0x1F38, 0xC13EC13D)
+    end
+    if ReadInt(Now+0x00) == 0x00320306 and ReadByte(Now+0x08) == 0x02 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x01, 0x00)
+        WriteByte(Now+0x08, 0x01)
+    elseif ReadInt(Now+0x00) == 0x00320006 and ReadByte(Load) == 0x00 then
+        WriteByte(Now+0x01, 0x03)
+        WriteByte(Now+0x08, 0x02)
     end
     if ReadInt(Now+0x00) == 0x00320506 and ReadByte(Save+0x1D50) == 0x13 then --Before Hades Escape Cutscene
         WriteByte(Save+0x950, 0x00)
@@ -781,7 +802,7 @@ function _OnFrame()
             end
         end
 	end
-    if ReadShort(Now+0x00) == 0x100A and ReadByte(Now+0x08) == 0x01 then --Pride Lands 1 1st Cutscene
+    if ReadInt(Now+0x00) == 0x0063100A and ReadByte(Now+0x08) == 0x01 then --Pride Lands 1 1st Cutscene
         WriteInt(Now+0x01, 0x01003206)
         WriteByte(Now+0x08, 0x13)
         WriteShort(Save+0x0D, 0x3206)
@@ -792,6 +813,13 @@ function _OnFrame()
         BitOr(Save+0x1DD0, 0x0E)
         BitOr(Save+0x1DD5, 0x10)
         WriteByte(Save+0x1DDF, 0x01)
+    end
+    if ReadInt(Now+0x00) == 0x0032060A and ReadByte(Now+0x08) == 0x13 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x01, 0x10)
+        WriteByte(Now+0x08, 0x01)
+    elseif ReadInt(Now+0x00) == 0x0032100A and ReadByte(Load) == 0x00 then
+        WriteByte(Now+0x01, 0x06)
+        WriteByte(Now+0x08, 0x13)
     end
     if ReadShort(Now+0x00) == 0x040A and ReadByte(Save+0x1DD0) == 0x7F then --Leaving Pride Rock Cutscene
         WriteByte(Save+0xF10, 0x00)
@@ -816,6 +844,7 @@ function _OnFrame()
     if ReadShort(Now+0x00) == 0x090A and ReadShort(CutLen) == 0x015A then --Circle of Life Cutscene
         WriteByte(CutSkp, 0x01)
         WriteByte(Now+0x01, 0x0C)
+        WriteByte(Now+0x08, 0x01)
         BitOr(Save+0x1DD2, 0x01)
         WriteByte(Save+0x1DDF, 0x05)
     end
@@ -1007,7 +1036,7 @@ function _OnFrame()
     if ReadShort(Now+0x00) == 0x1402 and ReadShort(Now+0x30) == 0x1A04 and ReadByte(Now+0x08) == 0xD3 then --Data Axel (1 Hour)
         WriteArray(Now+0x04, {0xD5, 0x00, 0xD5, 0x00, 0xD5})
     end
-    if ReadShort(Now+0x00) == 0x0004 and ReadByte(Now+0x08) == 0x01 then --Hollow Bastion 1 1st Cutscene
+    if ReadInt(Now+0x00) == 0x00630004 and ReadByte(Now+0x08) == 0x01 then --Hollow Bastion 1 1st Cutscene
         WriteInt(Now+0x01, 0x0100320A)
         WriteByte(Now+0x08, 0x16)
         WriteByte(Save+0x0D, 0x320A)
@@ -1018,6 +1047,13 @@ function _OnFrame()
         BitOr(Save+0x1D15, 0x60)
         BitOr(Save+0x1D1B, 0x20)
         BitOr(Save+0x1D1E, 0x06)
+    end
+    if ReadInt(Now+0x00) == 0x00320A04 and ReadByte(Now+0x08) == 0x16 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x01, 0x00)
+        WriteByte(Now+0x08, 0x01)
+    elseif ReadInt(Now+0x00) == 0x00320104 and ReadByte(Load) == 0x00 then
+        WriteByte(Now+0x01, 0x0A)
+        WriteByte(Now+0x08, 0x16)
     end
     if ReadShort(Now+0x00) == 0x0904 and ReadShort(CutLen) == 0x03C3 or ReadShort(CutLen) == 0x05D0 then --Borough Cutscenes
         WriteByte(CutSkp, 0x01)
@@ -1143,7 +1179,7 @@ function _OnFrame()
             WriteByte(CutSkp, 0x01)
         end
 	end
-    if ReadShort(Now+0x00) == 0x0010 and ReadByte(Now+0x08) == 0x01 then --Port Royal 1 1st Cutscene
+    if ReadInt(Now+0x00) == 0x00630010 and ReadByte(Now+0x08) == 0x01 then --Port Royal 1 1st Cutscene
         WriteByte(Now+0x02, 0x32)
         WriteByte(Now+0x08, 0x00)
         WriteByte(Save+0x0E, 0x32)
@@ -1153,6 +1189,9 @@ function _OnFrame()
         BitOr(Save+0x1E90, 0x10)
         BitOr(Save+0x1E99, 0x10)
         WriteInt(Save+0x20A0, 0x85468545)
+    end
+    if ReadShort(Now+0x00) == 0x0010 and ReadByte(Now+0x08) == 0x00 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x08, 0x01)
     end
     if ReadShort(Now+0x00) == 0x0110 and ReadShort(CutLen) == 0x0A81 or ReadShort(CutLen) == 0x0242 then --Pre-Harbor Pirates 1/2 Cutscene
         WriteByte(CutSkp, 0x01)
@@ -1278,7 +1317,7 @@ function _OnFrame()
             WriteByte(CutSkp, 0x01)
         end
 	end
-    if ReadShort(Now+0x00) == 0x010C and ReadByte(Now+0x08) == 0x35 then --Disney Castle 1st Cutscene
+    if ReadInt(Now+0x00) == 0x0063010C and ReadByte(Now+0x08) == 0x35 then --Disney Castle 1st Cutscene
         WriteArray(Now+0x00, {0x0C, 0x06, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x16})
         WriteInt(Save+0x0C, 0x0032060C)
         WriteShort(Save+0x3565, 0x0201)
@@ -1287,6 +1326,13 @@ function _OnFrame()
         BitOr(Save+0x1E10, 0x04)
         BitOr(Save+0x1E12, 0x01)
         WriteByte(Save+0x1E1F, 0x01)
+    end
+    if ReadInt(Now+0x00) == 0x0032060C and ReadByte(Now+0x08) == 0x16 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x01, 0x01)
+        WriteByte(Now+0x04, 0x35)
+    elseif ReadInt(Now+0x00) == 0x0032010C and ReadByte(Load) == 0x00 then
+        WriteByte(Now+0x01, 0x06)
+        WriteByte(Now+0x04, 0x00)
     end
     if ReadShort(Now+0x00) == 0x010C and ReadShort(CutLen) == 0x0C6C then --Meeting Queen Minnie Cutscene
 		WriteByte(CutSkp, 0x01)
@@ -1345,6 +1391,7 @@ function _OnFrame()
         BitOr(Save+0x1E11, 0x20)
         BitOr(Save+0x1E30, 0x01)
         BitOr(Save+0x1E34, 0x20)
+        WriteShort(Save+0x3569, 0x0201)
     end
     if ReadInt(Now+0x00) == 0x0033000D and ReadByte(Save+0x1E30) == 0x17 then --Post Past Pete Cutscene
 		WriteByte(Now+0x04, 0x00)
@@ -1366,6 +1413,8 @@ function _OnFrame()
     end
     if ReadShort(Now+0x00) == 0x080D and ReadShort(CutLen) == 0x0807 then --Before Waterway Pete Cutscene
         WriteByte(CutSkp, 0x01)
+        WriteByte(Now+0x01, 0x00)
+        WriteByte(Now+0x08, 0x06)
     end
     if ReadShort(Now+0x00) == 0x020D and ReadShort(CutLen) == 0x0239 then --Pre-Waterway Pete Cutscene
         WriteByte(CutSkp, 0x01)
@@ -1404,7 +1453,7 @@ function _OnFrame()
             end
         end
     end
-    if ReadShort(Now+0x00) == 0x0111 and ReadByte(Now+0x08) == 0x01 then --Space Paranoids 1 1st Cutscene
+    if ReadInt(Now+0x00) == 0x00320111 and ReadByte(Now+0x08) == 0x01 then --Space Paranoids 1 1st Cutscene
         WriteArray(Now+0x01, {0x00, 0x34, 0x00, 0x00, 0x00, 0x01, 0x00, 0x02})
         WriteShort(Save+0x0D, 0x3400)
         WriteShort(Save+0x3579, 0x0201)
@@ -1413,6 +1462,13 @@ function _OnFrame()
         BitOr(Save+0x1EB0, 0x06)
         BitOr(Save+0x1EB5, 0x80)
         WriteByte(Save+0x1EBF, 0x01)
+    end
+    if ReadInt(Now+0x00) == 0x00340011 and ReadByte(Now+0x08) == 0x02 and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x01, 0x01)
+        WriteByte(Now+0x08, 0x01)
+    elseif ReadInt(Now+0x00) == 0x00340111 and ReadByte(Load) == 0x00 then
+        WriteByte(Now+0x01, 0x00)
+        WriteByte(Now+0x08, 0x02)
     end
     if ReadShort(Now+0x00) == 0x0411 and ReadByte(Now+0x08) == 0x37 and ReadShort(CutLen) == 0x0015 then --Post Hostile Program Cutscene
         WriteByte(Save+0x19AE, 0x00)
@@ -1457,12 +1513,16 @@ function _OnFrame()
         BitOr(Save+0x1EB3, 0x80)
         WriteByte(Save+0x1EBF, 0x07)
     end
-    if ReadShort(Now+0x00) == 0x0102 and ReadByte(Now+0x08) == 0x34 then --Simulated Twilight Town 1st Cutscene
+    if ReadInt(Now+0x00) == 0x00630102 and ReadByte(Now+0x08) == 0x34 then --Simulated Twilight Town 1st Cutscene
         WriteArray(Now+0x00, {0x02, 0x07, 0x00, 0x00, 0x5F, 0x00, 0x5F, 0x00, 0x5F})
         WriteInt(Save+0x0C, 0x00000702)
         BitOr(Save+0x1CD2, 0x40)
         BitOr(Save+0x1CD3, 0x07)
         BitOr(Save+0x1CF8, 0x03)
+    end
+    if ReadShort(Now+0x00) == 0x0702 and ReadByte(Now+0x08) == 0x5F and ReadByte(Load) == 0x01 then --Temporary
+        WriteByte(Now+0x01, 0x01)
+        WriteByte(Now+0x08, 0x38)
     end
     if ReadShort(Now+0x00) == 0x0702 then --Market Street: Tram Common Cutscenes
         if ReadByte(Now+0x08) == 0x5F and ReadShort(Save+0x20E8) == 0x0000 then --Pre-1st Tutorial Cutscene
@@ -1779,6 +1839,8 @@ function _OnFrame()
     end
     if ReadShort(Now+0x00) == 0x090B and ReadShort(CutLen) == 0x05E1 then --Post Ursula's Revenge Cutscene
         WriteByte(CutSkp, 0x01)
+        WriteByte(Now+0x01, 0x07)
+        WriteByte(Now+0x08, 0x04)
         BitOr(Save+0x1DF5, 0x0C)
         BitOr(Save+0x2393, 0x80)
 	end
