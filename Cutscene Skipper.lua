@@ -1330,9 +1330,9 @@ function _OnFrame()
     if ReadInt(Now+0x00) == 0x0032060C and ReadByte(Now+0x08) == 0x16 and ReadByte(Load) == 0x01 then --Temporary
         WriteByte(Now+0x01, 0x01)
         WriteByte(Now+0x04, 0x35)
-    elseif ReadInt(Now+0x00) == 0x0032010C and ReadByte(Load) == 0x00 then
+    elseif ReadInt(Now+0x00) == 0x0032010C and ReadByte(Save+0x121A) == 0x00 and ReadByte(Load) == 0x00 then
         WriteByte(Now+0x01, 0x06)
-        WriteByte(Now+0x04, 0x00)
+        WriteByte(Now+0x04, 0x16)
     end
     if ReadShort(Now+0x00) == 0x010C and ReadShort(CutLen) == 0x0C6C then --Meeting Queen Minnie Cutscene
 		WriteByte(CutSkp, 0x01)
