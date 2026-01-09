@@ -1190,7 +1190,7 @@ function _OnFrame()
         BitOr(Save+0x1E99, 0x10)
         WriteInt(Save+0x20A0, 0x85468545)
     end
-    if ReadShort(Now+0x00) == 0x0010 and ReadByte(Now+0x08) == 0x00 and ReadByte(Load) == 0x01 then --Temporary
+    if ReadInt(Now+0x00) == 0x00320010 and ReadByte(Now+0x08) == 0x00 and ReadByte(Load) == 0x01 then --Temporary
         WriteByte(Now+0x08, 0x01)
     end
     if ReadShort(Now+0x00) == 0x0110 and ReadShort(CutLen) == 0x0A81 or ReadShort(CutLen) == 0x0242 then --Pre-Harbor Pirates 1/2 Cutscene
