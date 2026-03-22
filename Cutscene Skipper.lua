@@ -552,10 +552,12 @@ function _OnFrame()
         BitOr(Save+0x1D74, 0x08)
         WriteByte(Save+0x1D7F, 0x01)
     end
-    if ReadShort(Now+0x00) == 0x0007 and ReadShort(CutLen) == 0x0333 then --Post Agrabah Heartless Cutscene
+    if ReadShort(Now+0x00) == 0x0007 and ReadShort(CutLen) == 0x0333 then --Post Agrabah Heartless Cutscene 1
         WriteByte(CutSkp, 0x01)
-        BitOr(Save+0x1D70, 0x04)
     end
+    if ReadShort(Now+0x00) == 0x0207 and ReadShort(CutLen) == 0x02D9 then --Post Agrabah Heartless Cutscene 2
+		WriteByte(CutSkp, 0x01)
+	end
     if ReadShort(Now+0x00) == 0x0007 and ReadByte(Save+0x1D7F) == 0x01 and ReadByte(Save+0x3551) == 0x03 then --Jasmine Reunion Cutscene
         WriteByte(Save+0xA90, 0x00)
         WriteByte(Save+0xA9C, 0x00)

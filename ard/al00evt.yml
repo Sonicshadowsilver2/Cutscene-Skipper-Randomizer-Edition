@@ -29,17 +29,6 @@ AreaSettings 9 -1
 
 Spawn "a50e"
 
-Program 0x39
-Bgm 128 128
-AreaSettings 15 -1
- SetProgressFlag 0x1C24
- SetUnk05 0x3
- SetEvent "102" Type 9
- SetJump Type 1 World AL Area 2 Entrance 50 LocalSet 0 FadeType 1
- SetInventory 353
- SetPartyMenu 0
-
-
 Program 0x14
 AreaSettings 1 44
  SetProgressFlag 0x1C06
