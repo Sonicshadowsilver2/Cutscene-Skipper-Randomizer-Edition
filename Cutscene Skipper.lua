@@ -98,6 +98,27 @@ function BitNot(Address,Bit,Abs)
 WriteByte(Address,ReadByte(Address)&~Bit,Abs and OnPC)
 end
 
+local function _AutoRefillItems()
+    -- Stock starts at (Save + 0x3580) with Potion, so if we start at (0x3580 - 0x01) we can derive
+    -- the stock address for each item
+    local baseStockAddress = Save + (0x3580 - 0x01)
+
+    for itemSlotOffset = 0x2524, 0x2532, 0x02 do
+        -- Item currently in the slot, if any
+        local itemSlotAddress = Save + itemSlotOffset
+        -- Item designated to auto refill the slot (0x01 = Potion, 0x02 = Hi-Potion, etc.)
+        local autoItem = ReadShort(itemSlotAddress + 0x10)
+        if autoItem ~= 0x00 and ReadShort(itemSlotAddress) == 0x00 then
+            local stockAddress = baseStockAddress + autoItem
+            stock = ReadByte(stockAddress)
+            if stock > 0 then
+                WriteShort(itemSlotAddress, autoItem) -- Refill the item
+                WriteByte(stockAddress, stock - 1) -- Reduce stock by 1
+            end
+        end
+    end
+end
+
 function _OnFrame()
     if GameVersion == 0 then --Get anchor addresses
 		GetVersion()
@@ -205,58 +226,12 @@ function _OnFrame()
 	end
     if ReadShort(Now+0x00) == 0x1712 and ReadByte(Now+0x08) == 0x49 then --Armor Xemnas II Auto-Revert/Refill
         if ReadShort(Now+0x30) == 0x1812 and ReadByte(Now+0x38) == 0x47 then
-            if ReadShort(Save+0x2534) ~= 0 then --Item Slot 1 (Auto-Reload)
-                WriteShort(Save+0x2524,ReadShort(Save+0x2534)) --Auto-Reload Item Slot 1
-            end
-            if ReadShort(Save+0x2536) ~= 0 then --Item Slot 2 (Auto-Reload)
-                WriteShort(Save+0x2526,ReadShort(Save+0x2536)) --Auto-Reload Item Slot 2
-            end
-            if ReadShort(Save+0x2538) ~= 0 then --Item Slot 3 (Auto-Reload)
-                WriteShort(Save+0x2528,ReadShort(Save+0x2538)) --Auto-Reload Item Slot 3
-            end
-            if ReadShort(Save+0x253A) ~= 0 then --Item Slot 4 (Auto-Reload)
-                WriteShort(Save+0x252A,ReadShort(Save+0x253A)) --Auto-Reload Item Slot 4
-            end
-            if ReadShort(Save+0x253C) ~= 0 then --Item Slot 5 (Auto-Reload)
-                WriteShort(Save+0x252C,ReadShort(Save+0x253C)) --Auto-Reload Item Slot 5
-            end
-            if ReadShort(Save+0x253E) ~= 0 then --Item Slot 6 (Auto-Reload)
-                WriteShort(Save+0x252E,ReadShort(Save+0x253E)) --Auto-Reload Item Slot 6
-            end
-            if ReadShort(Save+0x2540) ~= 0 then --Item Slot 7 (Auto-Reload)
-                WriteShort(Save+0x2530,ReadShort(Save+0x2540)) --Auto-Reload Item Slot 7
-            end
-            if ReadShort(Save+0x2542) ~= 0 then --Item Slot 8 (Auto-Reload)
-                WriteShort(Save+0x2532,ReadShort(Save+0x2542)) --Auto-Reload Item Slot 8
-            end
+            _AutoRefillItems()
         end
     end
     if ReadShort(Now+0x00) == 0x1412 and ReadByte(Now+0x08) == 0x4A then --Final Xemnas Auto-Refill
         if ReadShort(Now+0x30) == 0x1712 and ReadByte(Now+0x38) == 0x49 then
-            if ReadShort(Save+0x2534) ~= 0 then --Item Slot 1 (Auto-Reload)
-                WriteShort(Save+0x2524,ReadShort(Save+0x2534)) --Auto-Reload Item Slot 1
-            end
-            if ReadShort(Save+0x2536) ~= 0 then --Item Slot 2 (Auto-Reload)
-                WriteShort(Save+0x2526,ReadShort(Save+0x2536)) --Auto-Reload Item Slot 2
-            end
-            if ReadShort(Save+0x2538) ~= 0 then --Item Slot 3 (Auto-Reload)
-                WriteShort(Save+0x2528,ReadShort(Save+0x2538)) --Auto-Reload Item Slot 3
-            end
-            if ReadShort(Save+0x253A) ~= 0 then --Item Slot 4 (Auto-Reload)
-                WriteShort(Save+0x252A,ReadShort(Save+0x253A)) --Auto-Reload Item Slot 4
-            end
-            if ReadShort(Save+0x253C) ~= 0 then --Item Slot 5 (Auto-Reload)
-                WriteShort(Save+0x252C,ReadShort(Save+0x253C)) --Auto-Reload Item Slot 5
-            end
-            if ReadShort(Save+0x253E) ~= 0 then --Item Slot 6 (Auto-Reload)
-                WriteShort(Save+0x252E,ReadShort(Save+0x253E)) --Auto-Reload Item Slot 6
-            end
-            if ReadShort(Save+0x2540) ~= 0 then --Item Slot 7 (Auto-Reload)
-                WriteShort(Save+0x2530,ReadShort(Save+0x2540)) --Auto-Reload Item Slot 7
-            end
-            if ReadShort(Save+0x2542) ~= 0 then --Item Slot 8 (Auto-Reload)
-                WriteShort(Save+0x2532,ReadShort(Save+0x2542)) --Auto-Reload Item Slot 8
-            end
+            _AutoRefillItems()
         end
     end
     if ReadShort(Now+0x00) == 0x1412 and ReadShort(CutLen) == 0x00DC then --Post Data Final Xemnas Cutscene
